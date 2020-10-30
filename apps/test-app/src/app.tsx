@@ -7,7 +7,7 @@ import { ThemeProvider as StyledThemeProvider } from 'styled-components'
 
 import { FrontendTemplate } from './pages/frontend'
 
-const App: React.FC = () => {
+const App: React.EFC = () => {
   const theme = generateTheme({ palette: AvailablePalettes.DARK, design: AvailableDesigns.DEFAULT })
   return (
     <Fragment>

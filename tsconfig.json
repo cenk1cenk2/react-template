@@ -15,7 +15,8 @@
     "strictNullChecks": false,
     "esModuleInterop": true,
     "rootDir": ".",
-    "baseUrl": "."
+    "baseUrl": ".",
+    "sourceRoot": "."
   },
   "exclude": ["node_modules", "tmp"]
 }

@@ -1,37 +1,6 @@
 {
   "version": 1,
   "projects": {
-    "template": {
-      "root": "libs/base",
-      "sourceRoot": "libs/base/src",
-      "projectType": "library",
-      "schematics": {},
-      "architect": {
-        "build": {
-          "builder": "@nrwl/web:package",
-          "options": {
-            "outputPath": "dist/libs/base",
-            "tsConfig": "libs/base/tsconfig.build.json",
-            "project": "libs/base/package.json",
-            "entryFile": "libs/base/src/index.ts",
-            "external": ["react", "react-dom"],
-            "babelConfig": "@nrwl/react/plugins/bundle-babel",
-            "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
-            "assets": [{
-              "glob": "README.md",
-              "input": ".",
-              "output": "."
-            }]
-          }
-        },
-        "lint": {
-          "builder": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": ["libs/base/**/*.{ts,tsx,js,jsx}"]
-          }
-        }
-      }
-    },
     "test-app": {
       "root": "apps/test-app",
       "sourceRoot": "apps/test-app/src",
@@ -104,6 +73,37 @@
         }
       }
     },
+    "base": {
+      "root": "libs/base",
+      "sourceRoot": "libs/base/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "build": {
+          "builder": "@nrwl/web:package",
+          "options": {
+            "outputPath": "dist/libs/base",
+            "tsConfig": "libs/base/tsconfig.build.json",
+            "project": "libs/base/package.json",
+            "entryFile": "libs/base/src/index.ts",
+            "external": ["react", "react-dom", "react-is"],
+            "babelConfig": "@nrwl/react/plugins/bundle-babel",
+            "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
+            "assets": [{
+              "glob": "README.md",
+              "input": ".",
+              "output": "."
+            }]
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/base/**/*.{ts,tsx,js,jsx}"]
+          }
+        }
+      }
+    },
     "components": {
       "root": "libs/components",
       "sourceRoot": "libs/components/src",
@@ -117,7 +117,7 @@
             "tsConfig": "libs/components/tsconfig.build.json",
             "project": "libs/components/package.json",
             "entryFile": "libs/components/src/index.ts",
-            "external": ["react", "react-dom"],
+            "external": ["react", "react-dom", "react-is"],
             "babelConfig": "@nrwl/react/plugins/bundle-babel",
             "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
             "assets": [{

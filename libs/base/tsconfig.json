@@ -2,11 +2,10 @@
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
     "jsx": "react",
-    "outDir": "../../dist/out-tsc",
     "types": ["node"],
+    "skipLibCheck": true,
     "typeRoots": ["types"]
   },
-  "files": ["../../node_modules/@nrwl/react/typings/cssmodule.d.ts", "../../node_modules/@nrwl/react/typings/image.d.ts"],
   "exclude": ["**/*.spec.ts", "**/*.spec.tsx"],
-  "include": ["**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx"]
+  "include": ["**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx", "../../node_modules/@nrwl/react/typings/cssmodule.d.ts", "../../node_modules/@nrwl/react/typings/image.d.ts"]
 }

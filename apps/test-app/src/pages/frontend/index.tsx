@@ -4,7 +4,7 @@ import { ThemeConsumer, withTheme } from 'styled-components'
 
 import LogoImage from './test.svg'
 
-export const FrontendTemplate: React.FC = () => {
+export const FrontendTemplate: React.EFC = () => {
   return (
     <Fragment>
       asdadas
@@ -15,6 +15,6 @@ export const FrontendTemplate: React.FC = () => {
 
 export default FrontendTemplate
 
-const Logo: React.FC = () => {
+const Logo: React.EFC = () => {
   return <LogoImage />
 }

@@ -27,7 +27,7 @@
     }
   },
   "projects": {
-    "template": {
+    "base": {
       "tags": []
     },
     "test-app": {

@@ -1,5 +1,5 @@
 import { Grid } from '@material-ui/core'
-import React, { Fragment, SVGProps } from 'react'
+import React, { Fragment } from 'react'
 import styled, { css } from 'styled-components'
 
 export interface BottomLogoProps {

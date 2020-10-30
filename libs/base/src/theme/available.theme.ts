@@ -1,6 +1,5 @@
-import React from 'react'
+import { Theme } from '@cenk1cenk2/react-template-base/interfaces'
 
-import { Theme } from './../interfaces/theme.interface'
 import { DefaultDesign } from './design'
 import { DarkPalette } from './palette'
 
@@ -19,5 +18,3 @@ export enum AvailableDesigns {
 export const DesignMap: Record<AvailableDesigns, Theme['design']> = {
   [AvailableDesigns.DEFAULT]: DefaultDesign
 }
-
-export const test: React.FC = (props) => {}

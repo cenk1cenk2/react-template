@@ -12,6 +12,6 @@ declare module 'react' {
 declare global {
   namespace React {
     // eslint-disable-next-line @typescript-eslint/ban-types
-    type FC<P = {}> = BaseReact.FunctionComponent<P & BaseProps>
+    type EFC<P = {}> = BaseReact.FunctionComponent<P & BaseProps>
   }
 }
