@@ -1,5 +1,5 @@
 {
-  "npmScope": "react-template",
+  "npmScope": "cenk1cenk2",
   "affected": {
     "defaultBase": "master"
   },
@@ -12,15 +12,23 @@
     "tsconfig.base.json": "*",
     "tslint.json": "*",
     ".eslintrc.json": "*",
-    "nx.json": "*"
+    "nx.json": "*",
+    "**/config/*": "*",
+    ".docker/**": "*",
+    "**/assets/**": []
   },
   "tasksRunnerOptions": {
     "default": {
       "runner": "@nrwl/workspace/tasks-runners/default",
+      "cacheDirectory": ".cache/nx",
       "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"]
+        "cacheableOperations": ["build"]
       }
     }
   },
-  "projects": {}
+  "projects": {
+    "template": {
+      "tags": []
+    }
+  }
 }

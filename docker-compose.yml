@@ -1,0 +1,13 @@
+version: '3.7'
+services:
+  monorepo:
+    image: cenk1cenk2/lerna-dev:14
+    environment:
+      PACKAGE_START_COMMAND: start
+      SERVICES: .
+      PREFIX_LABEL: "false"
+    ports:
+      - 3000:3000
+      - 9229:9229
+    volumes:
+      - .:/data/app

@@ -1,6 +1,21 @@
 {
   "version": 1,
-  "projects": {},
+  "projects": {
+    "template": {
+      "root": "libs/template",
+      "sourceRoot": "libs/template/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/template/**/*.{ts,tsx,js,jsx}"]
+          }
+        }
+      }
+    }
+  },
   "cli": {
     "defaultCollection": "@nrwl/workspace"
   }
