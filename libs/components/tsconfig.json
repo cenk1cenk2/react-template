@@ -3,7 +3,8 @@
   "compilerOptions": {
     "jsx": "react",
     "outDir": "../../dist/out-tsc",
-    "types": ["node"]
+    "types": ["node"],
+    "typeRoots": ["../../libs/base/types"]
   },
   "files": ["../../node_modules/@nrwl/react/typings/cssmodule.d.ts", "../../node_modules/@nrwl/react/typings/image.d.ts"],
   "exclude": ["**/*.spec.ts", "**/*.spec.tsx"],

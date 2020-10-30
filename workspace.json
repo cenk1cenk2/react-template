@@ -2,34 +2,32 @@
   "version": 1,
   "projects": {
     "template": {
-      "root": "libs/template",
-      "sourceRoot": "libs/template/src",
+      "root": "libs/base",
+      "sourceRoot": "libs/base/src",
       "projectType": "library",
       "schematics": {},
       "architect": {
         "build": {
           "builder": "@nrwl/web:package",
           "options": {
-            "outputPath": "dist/libs/template",
-            "tsConfig": "libs/template/tsconfig.build.json",
-            "project": "libs/template/package.json",
-            "entryFile": "libs/template/src/index.ts",
+            "outputPath": "dist/libs/base",
+            "tsConfig": "libs/base/tsconfig.build.json",
+            "project": "libs/base/package.json",
+            "entryFile": "libs/base/src/index.ts",
             "external": ["react", "react-dom"],
             "babelConfig": "@nrwl/react/plugins/bundle-babel",
             "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
-            "assets": [
-              {
-                "glob": "README.md",
-                "input": ".",
-                "output": "."
-              }
-            ]
+            "assets": [{
+              "glob": "README.md",
+              "input": ".",
+              "output": "."
+            }]
           }
         },
         "lint": {
           "builder": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": ["libs/template/**/*.{ts,tsx,js,jsx}"]
+            "lintFilePatterns": ["libs/base/**/*.{ts,tsx,js,jsx}"]
           }
         }
       }
@@ -49,8 +47,7 @@
             "polyfills": "apps/test-app/src/polyfills.ts",
             "tsConfig": "apps/test-app/tsconfig.json",
             "sourceMap": true,
-            "assets": [
-              {
+            "assets": [{
                 "glob": "favicon.ico",
                 "input": "apps/test-app/public",
                 "output": "."
@@ -74,13 +71,11 @@
               "namedChunks": false,
               "extractLicenses": true,
               "vendorChunk": false,
-              "budgets": [
-                {
-                  "type": "initial",
-                  "maximumWarning": "2mb",
-                  "maximumError": "5mb"
-                }
-              ]
+              "budgets": [{
+                "type": "initial",
+                "maximumWarning": "2mb",
+                "maximumError": "5mb"
+              }]
             }
           }
         },
@@ -88,7 +83,12 @@
           "builder": "@nrwl/web:dev-server",
           "options": {
             "buildTarget": "test-app:build-lazy",
-            "host": "0.0.0.0"
+            "host": "0.0.0.0",
+            "overlay": {
+              "errors": true,
+              "warnings": false
+            },
+            "hot": true
           },
           "configurations": {
             "production": {
@@ -120,13 +120,11 @@
             "external": ["react", "react-dom"],
             "babelConfig": "@nrwl/react/plugins/bundle-babel",
             "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
-            "assets": [
-              {
-                "glob": "README.md",
-                "input": ".",
-                "output": "."
-              }
-            ]
+            "assets": [{
+              "glob": "README.md",
+              "input": ".",
+              "output": "."
+            }]
           }
         },
         "lint": {

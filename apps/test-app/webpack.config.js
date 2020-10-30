@@ -1,12 +1,11 @@
+const ErrorOverlayPlugin = require('error-overlay-webpack-plugin')
 const path = require('path')
 const merge = require('webpack-merge')
 
 // can add workspace here as well
 module.exports = (config) => {
   return merge(config, {
-    devServer: {
-      disableHostCheck: true
-    },
+    devtool: 'cheap-module-source-map',
     stats: 'minimal',
     module: {
       rules: [
@@ -82,6 +81,9 @@ module.exports = (config) => {
         }
       ]
     },
-    plugins: []
+    plugins: [new ErrorOverlayPlugin()],
+    node: {
+      process: 'mock'
+    }
   })
 }

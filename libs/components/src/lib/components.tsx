@@ -8,7 +8,7 @@ const StyledComponents = styled.div`
   color: pink;
 `
 
-export const Components: React.FunctionComponent<ComponentsProps> = () => {
+export const Components: React.FC<ComponentsProps> = () => {
   return (
     <StyledComponents>
       <h1>Welcome to components!</h1>

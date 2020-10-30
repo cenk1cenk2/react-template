@@ -83,6 +83,7 @@
     "babel-plugin-styled-components": "1.10.7",
     "cypress": "^4.1.0",
     "dotenv": "8.2.0",
+    "error-overlay-webpack-plugin": "^0.4.1",
     "eslint": "7.12.1",
     "eslint-config-prettier": "6.0.0",
     "eslint-plugin-cypress": "^2.10.3",
