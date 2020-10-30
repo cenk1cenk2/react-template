@@ -14,9 +14,96 @@
           }
         }
       }
+    },
+    "test-app": {
+      "root": "apps/test-app",
+      "sourceRoot": "apps/test-app/src",
+      "projectType": "application",
+      "schematics": {},
+      "architect": {
+        "build": {
+          "builder": "@nrwl/web:build",
+          "options": {
+            "outputPath": "dist/apps/test-app",
+            "index": "apps/test-app/public/index.html",
+            "main": "apps/test-app/src/main.tsx",
+            "polyfills": "apps/test-app/src/polyfills.ts",
+            "tsConfig": "apps/test-app/tsconfig.json",
+            "sourceMap": true,
+            "assets": [
+              {
+                "glob": "favicon.ico",
+                "input": "apps/test-app/public",
+                "output": "."
+              },
+              {
+                "glob": "*",
+                "input": "apps/test-app/assets",
+                "output": "assets"
+              }
+            ],
+            "styles": [],
+            "scripts": [],
+            "webpackConfig": "apps/test-app/webpack.config.js"
+          },
+          "configurations": {
+            "production": {
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@nrwl/web:dev-server",
+          "options": {
+            "buildTarget": "test-app:build",
+            "host": "0.0.0.0"
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "test-app:build:production"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["apps/test-app/**/*.{ts,tsx,js,jsx}"]
+          }
+        }
+      }
     }
   },
   "cli": {
-    "defaultCollection": "@nrwl/workspace"
-  }
+    "defaultCollection": "@nrwl/react"
+  },
+  "schematics": {
+    "@nrwl/react": {
+      "application": {
+        "style": "styled-components",
+        "linter": "eslint",
+        "babel": true
+      },
+      "component": {
+        "style": "styled-components"
+      },
+      "library": {
+        "style": "styled-components",
+        "linter": "eslint"
+      }
+    }
+  },
+  "defaultProject": "test-app"
 }

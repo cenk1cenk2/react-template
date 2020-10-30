@@ -8,11 +8,10 @@ const StyledTemplate = styled.div`
   color: pink;
 `
 
-export const Template = (props: TemplateProps) => {
+export const Template: React.FunctionComponent<TemplateProps> = () => {
   return (
     <StyledTemplate>
       <h1>Welcome to template!</h1>
-      {props}
     </StyledTemplate>
   )
 }

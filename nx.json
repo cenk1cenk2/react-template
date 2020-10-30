@@ -29,6 +29,9 @@
   "projects": {
     "template": {
       "tags": []
+    },
+    "test-app": {
+      "tags": []
     }
   }
 }
