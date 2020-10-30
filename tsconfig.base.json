@@ -2,7 +2,8 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "paths": {
-      "@cenk1cenk2/react-template-base": ["libs/template/src/index.ts"]
+      "@cenk1cenk2/react-template-base": ["libs/template/src/index.ts"],
+      "@cenk1cenk2/react-template-components": ["libs/components/src/index.ts"]
     }
   }
 }

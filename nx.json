@@ -32,6 +32,9 @@
     },
     "test-app": {
       "tags": []
+    },
+    "components": {
+      "tags": []
     }
   }
 }
