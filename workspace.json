@@ -17,7 +17,8 @@
             "polyfills": "apps/test-app/src/polyfills.ts",
             "tsConfig": "apps/test-app/tsconfig.json",
             "sourceMap": true,
-            "assets": [{
+            "assets": [
+              {
                 "glob": "favicon.ico",
                 "input": "apps/test-app/public",
                 "output": "."
@@ -41,11 +42,13 @@
               "namedChunks": false,
               "extractLicenses": true,
               "vendorChunk": false,
-              "budgets": [{
-                "type": "initial",
-                "maximumWarning": "2mb",
-                "maximumError": "5mb"
-              }]
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                }
+              ]
             }
           }
         },
@@ -86,11 +89,13 @@
             "external": ["react", "react-dom", "react-is"],
             "babelConfig": "@nrwl/react/plugins/bundle-babel",
             "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
-            "assets": [{
-              "glob": "README.md",
-              "input": ".",
-              "output": "."
-            }]
+            "assets": [
+              {
+                "glob": "README.md",
+                "input": ".",
+                "output": "."
+              }
+            ]
           }
         },
         "lint": {
@@ -117,11 +122,13 @@
             "external": ["react", "react-dom", "react-is"],
             "babelConfig": "@nrwl/react/plugins/bundle-babel",
             "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
-            "assets": [{
-              "glob": "README.md",
-              "input": ".",
-              "output": "."
-            }]
+            "assets": [
+              {
+                "glob": "README.md",
+                "input": ".",
+                "output": "."
+              }
+            ]
           }
         },
         "lint": {

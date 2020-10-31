@@ -1,4 +1,4 @@
-import { Grid } from '@material-ui/core'
+import { Grid, Typography } from '@material-ui/core'
 import React, { Fragment, SVGProps } from 'react'
 import styled, { css, useTheme } from 'styled-components'
 
@@ -18,15 +18,19 @@ export const BottomLogo: React.EFC<BottomLogoProps> = (props) => {
         <Grid container direction="row" justify="center" alignItems="center">
           <Grid item>
             <Logo>
-              <props.logo height={theme.typography.fontSize} width={theme.typography.fontSize} />
+              <props.logo height={theme.typography.h5.fontSize} width={theme.typography.h5.fontSize} />
             </Logo>
           </Grid>
-          <Grid item className="font-w300">
-            {props.package.name}
+          <Grid item>
+            <Typography variant="h5" color="textPrimary">
+              {props.package.name}
+            </Typography>
           </Grid>
         </Grid>
-        <Grid item className="text-muted">
-          <small>v{props.package.version}</small>
+        <Grid item>
+          <Typography variant="h6" color="textSecondary">
+            <small>v{props.package.version}</small>
+          </Typography>
         </Grid>
       </Grid>
     </Fragment>
@@ -37,6 +41,7 @@ const Logo = styled.div(
   ({ theme }) => css`
     width: ${theme.typography.fontSize}px;
     height: ${theme.typography.fontSize}px;
-    margin-right: 5px;
+    margin-right: ${theme.typography.fontSize / 2}px;
+    margin-top: ${theme.typography.fontSize / 3}px;
   `
 )

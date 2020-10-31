@@ -8,12 +8,6 @@ declare module 'react' {
   }
 }
 
-declare module '*.svg' {
-  export const ReactComponent: BaseReact.FunctionComponent<BaseReact.SVGProps<SVGSVGElement> & { title?: string }>
-
-  export default ReactComponent
-}
-
 declare global {
   namespace React {
     // eslint-disable-next-line @typescript-eslint/ban-types

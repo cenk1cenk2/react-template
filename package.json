@@ -26,7 +26,7 @@
     "affected:libs": "nx affected:libs",
     "affected:build": "nx affected:build",
     "affected:test": "nx affected:test",
-    "affected:lint": "nx format:write && nx affected:lint --all",
+    "affected:lint": "nx format:write && nx affected:lint --all --fix",
     "affected:dep-graph": "nx affected:dep-graph",
     "affected": "nx affected",
     "update": "nx migrate latest",
@@ -48,6 +48,7 @@
     "react-dom": "16.13.1",
     "react-is": "16.13.1",
     "react-router-dom": "5.2.0",
+    "roboto-fontface": "^0.10.0",
     "styled-components": "5.1.1"
   },
   "devDependencies": {
@@ -88,6 +89,7 @@
     "eslint-plugin-jsx-a11y": "6.3.1",
     "eslint-plugin-react": "7.20.0",
     "eslint-plugin-react-hooks": "4.0.4",
+    "fontsource-lato": "^3.0.9",
     "husky": "^4.3.0",
     "jest": "26.2.2",
     "lint-staged": "^10.5.0",

@@ -21,10 +21,20 @@ export const generateTheme = (options: { palette: AvailablePalettes, design: Ava
         }
       },
       typography: {
-        fontFamily: [ 'PT Sans', 'sans-serif' ].join(','),
+        fontFamily: [ 'Lato' ].join(','),
+        h1: {
+          fontFace: 'Roboto'
+        },
+        h2: {
+          fontFace: 'Roboto'
+        },
+        h3: {
+          fontFace: 'Roboto'
+        },
         h4: {
           fontSize: '1.125rem',
-          fontWeight: 'bold'
+          fontWeight: 'bold',
+          fontFamily: 'Lato'
         },
         h5: {
           fontSize: '1rem',

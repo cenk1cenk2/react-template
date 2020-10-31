@@ -1,1 +1,2 @@
-loglevel: debug
+package-name: react-template-test
+package-version: 1.0.0-development

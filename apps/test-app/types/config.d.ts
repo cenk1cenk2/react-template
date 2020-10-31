@@ -1,3 +1,4 @@
 declare const CONFIG: {
-  loglevel: string
+  'package-name': string
+  'package-version': string
 }

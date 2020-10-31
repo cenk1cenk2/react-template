@@ -7,7 +7,7 @@ export const DarkPalette: Theme['palette'] = {
   ...DefaultMuiDarkTheme.palette,
   background: {
     default: '#121212',
-    paper: '#212121'
+    paper: '#1c1c1c'
   },
   common: {
     black: '#000000',
@@ -66,10 +66,10 @@ export const DarkPalette: Theme['palette'] = {
     A700: '#616161'
   },
   text: {
-    primary: 'rgba(0, 0, 0, 0.87)',
-    secondary: 'rgba(0, 0, 0, 0.54)',
-    disabled: 'rgba(0, 0, 0, 0.38)',
-    hint: 'rgba(0, 0, 0, 0.38)'
+    primary: '#efefef',
+    secondary: '#E0E0E0',
+    disabled: '#cccccc',
+    hint: 'rgba(239, 239, 239, 0.38)'
   },
-  divider: 'rgba(0, 0, 0, 0.12)'
+  divider: 'rgba(239, 239, 239, 0.12)'
 }
