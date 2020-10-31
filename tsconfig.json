@@ -1,8 +1,9 @@
 {
   "compilerOptions": {
     "target": "es2019",
-    "lib": ["esnext", "DOM"],
+    "lib": ["DOM", "DOM.Iterable", "ES5", "ES6", "ESNext"],
     "module": "ESNext",
+    "types": ["node"],
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "declaration": true,
@@ -12,11 +13,13 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "incremental": true,
+    "downlevelIteration": true,
     "strictNullChecks": false,
     "esModuleInterop": true,
+    "jsx": "react",
     "rootDir": ".",
     "baseUrl": ".",
-    "sourceRoot": "."
+    "outDir": "./dist"
   },
   "exclude": ["node_modules", "tmp"]
 }

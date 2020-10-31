@@ -6,8 +6,8 @@ const DefaultMuiDarkTheme = createMuiTheme({ palette: { type: 'dark' } })
 export const DarkPalette: Theme['palette'] = {
   ...DefaultMuiDarkTheme.palette,
   background: {
-    default: '#000',
-    paper: '#fff'
+    default: '#121212',
+    paper: '#212121'
   },
   common: {
     black: '#000000',

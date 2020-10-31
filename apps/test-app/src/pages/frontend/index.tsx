@@ -1,20 +1,13 @@
 import { BottomLogo } from '@cenk1cenk2/react-template-components'
+import LogoImage from '@test-app/assets/img/logo/logo.svg'
 import React, { Fragment } from 'react'
-import { ThemeConsumer, withTheme } from 'styled-components'
-
-import LogoImage from './test.svg'
 
 export const FrontendTemplate: React.EFC = () => {
   return (
     <Fragment>
-      asdadas
-      <BottomLogo package={{ name: 'test', version: 'test' }} logo={Logo} />
+      <BottomLogo package={{ name: 'test', version: 'test' }} logo={LogoImage} />
     </Fragment>
   )
 }
 
 export default FrontendTemplate
-
-const Logo: React.EFC = () => {
-  return <LogoImage />
-}

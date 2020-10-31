@@ -1,12 +1,21 @@
 const ErrorOverlayPlugin = require('error-overlay-webpack-plugin')
 const path = require('path')
+const webpack = require('webpack')
 const merge = require('webpack-merge')
 
 // can add workspace here as well
-module.exports = (config) => {
+module.exports = (config, workspace) => {
+  const options = workspace.options ? workspace.options : workspace.buildOptions
+  process.env.NODE_CONFIG_DIR = path.join(options.cwd, 'config')
+
   return merge(config, {
-    devtool: 'cheap-module-source-map',
+    devtool: 'source-map',
     stats: 'minimal',
+    output: {
+      filename: '[name].[hash:8].js',
+      sourceMapFilename: '[name].[hash:8].map',
+      chunkFilename: '[id].[hash:8].js'
+    },
     module: {
       rules: [
         {
@@ -81,7 +90,12 @@ module.exports = (config) => {
         }
       ]
     },
-    plugins: [new ErrorOverlayPlugin()],
+    plugins: [
+      new ErrorOverlayPlugin(),
+      new webpack.DefinePlugin({
+        CONFIG: JSON.stringify(require('config').util.toObject())
+      })
+    ],
     node: {
       process: 'mock'
     }

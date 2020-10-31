@@ -11,8 +11,5 @@
     "url": "https://srcs.kilic.dev"
   },
   "license": "MIT",
-  "scripts": {},
-  "devDependencies": {
-    "@material-ui/core": "^4.11.0"
-  }
+  "scripts": {}
 }

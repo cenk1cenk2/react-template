@@ -10,6 +10,7 @@
         "build-lazy": {
           "builder": "@nrwl/web:build",
           "options": {
+            "cwd": "apps/test-app",
             "outputPath": "dist/apps/test-app",
             "index": "apps/test-app/public/index.html",
             "main": "apps/test-app/src/main.tsx",
@@ -53,10 +54,6 @@
           "options": {
             "buildTarget": "test-app:build-lazy",
             "host": "0.0.0.0",
-            "overlay": {
-              "errors": true,
-              "warnings": false
-            },
             "hot": true
           },
           "configurations": {
