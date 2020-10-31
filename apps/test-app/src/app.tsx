@@ -1,4 +1,4 @@
-import { AvailableDesigns, AvailablePalettes, generateTheme } from '@cenk1cenk2/react-template-base'
+import { AvailableDesigns, AvailablePalettes, generateTheme, GlobalStyles } from '@cenk1cenk2/react-template-base'
 import { StylesProvider } from '@material-ui/core'
 import CssBaseline from '@material-ui/core/CssBaseline'
 import { ThemeProvider } from '@material-ui/styles'
@@ -18,9 +18,9 @@ const App: React.FC = () => {
     <StylesProvider injectFirst>
       <ThemeProvider theme={theme}>
         <StyledThemeProvider theme={theme}>
+          <GlobalStyles />
           <CssBaseline />
           <Router history={history}>
-            {/* <GlobalStyles /> */}
             <Switch>
               <Route path="/frontend" component={FrontendTemplate} />
             </Switch>

@@ -43,8 +43,7 @@ module.exports = (config, workspace) => {
             {
               loader: 'file-loader',
               options: {
-                outputPath: path.join(__dirname, '/dist/images/'),
-                name: '[identifier]_[hash:7].[ext]'
+                name: 'assets/img/[hash:24].[ext]'
               }
             }
           ]
