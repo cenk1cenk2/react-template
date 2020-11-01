@@ -74,7 +74,7 @@ export const generateTheme = (options: { palette: AvailablePalettes, design: Ava
       mixins: {
         toolbar: {
           minHeight: design.header.headerSizeMin,
-          background: design.body[2]
+          background: palette.background.paper
         }
       }
     }),

@@ -7,7 +7,7 @@ export interface BottomLogoProps {
     name: string
     version: string
   }
-  logo: React.EFC<SVGProps<SVGSVGElement>>
+  logo: React.EFC<SVGProps<SVGSVGElement>> | string
 }
 
 export const BottomLogo: React.EFC<BottomLogoProps> = (props) => {

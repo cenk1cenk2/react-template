@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Some react/next.js components.",
   "main": "./src/index.js",
-  "types": "./src/index.d.ts",
+  "types": "./components/src/index.d.ts",
   "repository": "https://github.com/cenk1cenk2/react-template",
   "author": {
     "name": "Cenk Kilic",

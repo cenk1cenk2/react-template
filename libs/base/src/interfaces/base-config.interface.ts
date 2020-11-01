@@ -1,2 +1,6 @@
-// eslint-disable-next-line @typescript-eslint/no-empty-interface
-export interface BaseConfig {}
+export interface BaseConfig {
+  package: {
+    name: string
+    version: string
+  }
+}

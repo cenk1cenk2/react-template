@@ -17,8 +17,7 @@
             "polyfills": "apps/test-app/src/polyfills.ts",
             "tsConfig": "apps/test-app/tsconfig.json",
             "sourceMap": true,
-            "assets": [
-              {
+            "assets": [{
                 "glob": "favicon.ico",
                 "input": "apps/test-app/public",
                 "output": "."
@@ -42,13 +41,11 @@
               "namedChunks": false,
               "extractLicenses": true,
               "vendorChunk": false,
-              "budgets": [
-                {
-                  "type": "initial",
-                  "maximumWarning": "2mb",
-                  "maximumError": "5mb"
-                }
-              ]
+              "budgets": [{
+                "type": "initial",
+                "maximumWarning": "2mb",
+                "maximumError": "5mb"
+              }]
             }
           }
         },
@@ -82,20 +79,25 @@
         "build": {
           "builder": "@nrwl/web:package",
           "options": {
-            "outputPath": "dist/libs/base",
+            "outputPath": "dist/react-template-base",
             "tsConfig": "libs/base/tsconfig.build.json",
             "project": "libs/base/package.json",
             "entryFile": "libs/base/src/index.ts",
             "external": ["react", "react-dom", "react-is"],
             "babelConfig": "@nrwl/react/plugins/bundle-babel",
             "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
-            "assets": [
-              {
-                "glob": "README.md",
-                "input": ".",
-                "output": "."
-              }
-            ]
+            "globals": [{
+              "moduleId": "@material-ui/core",
+              "global": "@material-ui/core"
+            }, {
+              "moduleId": "styled-components",
+              "global": "styled-components"
+            }],
+            "assets": [{
+              "glob": "README.md",
+              "input": ".",
+              "output": "."
+            }]
           }
         },
         "lint": {
@@ -115,20 +117,28 @@
         "build": {
           "builder": "@nrwl/web:package",
           "options": {
-            "outputPath": "dist/libs/components",
+            "outputPath": "dist/react-template-components",
             "tsConfig": "libs/components/tsconfig.build.json",
             "project": "libs/components/package.json",
             "entryFile": "libs/components/src/index.ts",
             "external": ["react", "react-dom", "react-is"],
             "babelConfig": "@nrwl/react/plugins/bundle-babel",
             "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
-            "assets": [
-              {
-                "glob": "README.md",
-                "input": ".",
-                "output": "."
-              }
-            ]
+            "globals": [{
+              "moduleId": "@material-ui/core",
+              "global": "@material-ui/core"
+            }, {
+              "moduleId": "styled-components",
+              "global": "styled-components"
+            }, {
+              "moduleId": "react",
+              "global": "react"
+            }],
+            "assets": [{
+              "glob": "README.md",
+              "input": ".",
+              "output": "."
+            }]
           }
         },
         "lint": {

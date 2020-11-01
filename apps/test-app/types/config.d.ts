@@ -1,4 +1,6 @@
 declare const CONFIG: {
-  'package-name': string
-  'package-version': string
+  package: {
+    name: string
+    version: string
+  }
 }
