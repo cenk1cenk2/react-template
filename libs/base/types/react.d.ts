@@ -1,4 +1,4 @@
-import { BaseProps } from '@cenk1cenk2/react-template-base/interfaces'
+// import { BaseProps } from '@cenk1cenk2/react-template-base'
 import * as BaseReact from 'react'
 
 declare module 'react' {
@@ -8,9 +8,9 @@ declare module 'react' {
   }
 }
 
-declare global {
-  namespace React {
-    // eslint-disable-next-line @typescript-eslint/ban-types
-    type EFC<P = {}> = BaseReact.FunctionComponent<P & BaseProps>
-  }
-}
+// declare global {
+//   namespace React {
+//     // eslint-disable-next-line @typescript-eslint/ban-types
+//     type EFC<P = {}> = BaseReact.FunctionComponent<P & BaseProps>
+//   }
+// }

@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/naming-convention */
-import { Theme } from '@cenk1cenk2/react-template-base/interfaces'
+import { Theme } from '@cenk1cenk2/react-template-base'
 import { createMuiTheme } from '@material-ui/core'
 
 import { AvailableDesigns, AvailablePalettes, DesignMap, PaletteMap } from './available.theme'

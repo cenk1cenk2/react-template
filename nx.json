@@ -27,10 +27,10 @@
     }
   },
   "projects": {
-    "base": {
+    "test-app": {
       "tags": []
     },
-    "test-app": {
+    "base": {
       "tags": []
     },
     "components": {

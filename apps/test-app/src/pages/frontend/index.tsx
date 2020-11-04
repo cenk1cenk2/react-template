@@ -4,7 +4,7 @@ import LogoImage from '@test-app/assets/img/logo/logo.svg'
 import { CONFIG } from 'apps/test-app/types/config'
 import React, { Fragment } from 'react'
 
-export const FrontendTemplate: React.EFC = () => {
+export const FrontendTemplate: React.FC = () => {
   return (
     <Fragment>
       <BackgroundImageContainer $url={BackgroundImage}>

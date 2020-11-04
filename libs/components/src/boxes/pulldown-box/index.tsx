@@ -1,6 +1,4 @@
-import { Container } from '@cenk1cenk2/react-template-components/boxes/container'
-import { MaxWidths } from '@cenk1cenk2/react-template-components/interfaces'
-import { BottomLogo, BottomLogoProps } from '@cenk1cenk2/react-template-components/logo'
+import { Container, MaxWidths, BottomLogo, BottomLogoProps } from '@cenk1cenk2/react-template-components'
 import { Box as BaseBox, Grid } from '@material-ui/core'
 import React, { Fragment } from 'react'
 import styled, { css } from 'styled-components'
@@ -34,7 +32,7 @@ export type PulldownProps = {
   offset?: StyledGridProps['$offset']
 } & BottomLogoProps
 
-export const Pulldown: React.EFC<PulldownProps> = (props) => {
+export const Pulldown: React.FC<PulldownProps> = (props) => {
   return (
     <Fragment>
       <StyledGrid container direction="column" $offset={props.offset}>

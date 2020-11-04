@@ -1,4 +1,4 @@
-import { Theme } from '@cenk1cenk2/react-template-base/interfaces'
+import { Theme } from '@cenk1cenk2/react-template-base'
 
 import { DefaultDesign } from './design'
 import { DarkPalette } from './palette'

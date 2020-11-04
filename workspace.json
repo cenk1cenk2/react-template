@@ -87,17 +87,25 @@
             "babelConfig": "@nrwl/react/plugins/bundle-babel",
             "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
             "globals": [{
-              "moduleId": "@material-ui/core",
-              "global": "@material-ui/core"
-            }, {
-              "moduleId": "styled-components",
-              "global": "styled-components"
-            }],
+                "moduleId": "@material-ui/core",
+                "global": "@material-ui/core"
+              },
+              {
+                "moduleId": "styled-components",
+                "global": "styled-components"
+              }
+            ],
             "assets": [{
-              "glob": "README.md",
-              "input": ".",
-              "output": "."
-            }]
+                "glob": "README.md",
+                "input": ".",
+                "output": "."
+              },
+              {
+                "glob": "*",
+                "input": "libs/base/types",
+                "output": "types/"
+              }
+            ]
           }
         },
         "lint": {
@@ -125,18 +133,25 @@
             "babelConfig": "@nrwl/react/plugins/bundle-babel",
             "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
             "globals": [{
-              "moduleId": "@material-ui/core",
-              "global": "@material-ui/core"
-            }, {
-              "moduleId": "styled-components",
-              "global": "styled-components"
-            }, {
-              "moduleId": "react",
-              "global": "react"
-            }],
+                "moduleId": "@material-ui/core",
+                "global": "@material-ui/core"
+              },
+              {
+                "moduleId": "styled-components",
+                "global": "styled-components"
+              },
+              {
+                "moduleId": "react",
+                "global": "react"
+              }
+            ],
             "assets": [{
               "glob": "README.md",
               "input": ".",
+              "output": "."
+            }, {
+              "glob": "index.d.ts",
+              "input": "libs/components/src/",
               "output": "."
             }]
           }
