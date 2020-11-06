@@ -43,7 +43,10 @@
   },
   "workspaces": {
     "nohoist": [],
-    "packages": ["apps/*", "libs/*"]
+    "packages": [
+      "apps/*",
+      "libs/*"
+    ]
   },
   "resolutions": {
     "**/react-is": "^17.0.1"
