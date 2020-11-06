@@ -1,3 +1,10 @@
+## @cenk1cenk2/react-template-components [1.0.7](https://github.com/cenk1cenk2/react-template/compare/@cenk1cenk2/react-template-components@1.0.6...@cenk1cenk2/react-template-components@1.0.7) (2020-11-06)
+
+
+### Bug Fixes
+
+* **drone:** ensure publish ([0045ead](https://github.com/cenk1cenk2/react-template/commit/0045ead06a6f7612571ace4d4cf6cf0f03c95855))
+
 ## @cenk1cenk2/react-template-components [1.0.6](https://github.com/cenk1cenk2/react-template/compare/@cenk1cenk2/react-template-components@1.0.5...@cenk1cenk2/react-template-components@1.0.6) (2020-11-06)
 
 
