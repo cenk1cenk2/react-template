@@ -1,3 +1,10 @@
+## @cenk1cenk2/react-template-base [1.0.1](https://github.com/cenk1cenk2/react-template/compare/@cenk1cenk2/react-template-base@1.0.0...@cenk1cenk2/react-template-base@1.0.1) (2020-11-06)
+
+
+### Bug Fixes
+
+* **drone:** fix drone setup ([b871e89](https://github.com/cenk1cenk2/react-template/commit/b871e896e54872c6b18705ccb00c84d48ee53f87))
+
 # @cenk1cenk2/react-template-base 1.0.0 (2020-11-06)
 
 
