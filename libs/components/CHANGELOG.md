@@ -1,3 +1,10 @@
+## @cenk1cenk2/react-template-components [1.0.4](https://github.com/cenk1cenk2/react-template/compare/@cenk1cenk2/react-template-components@1.0.3...@cenk1cenk2/react-template-components@1.0.4) (2020-11-06)
+
+
+### Bug Fixes
+
+* **drone:** set output ([74f83e5](https://github.com/cenk1cenk2/react-template/commit/74f83e511166ee05f68b83325a22f2e9922e10d6))
+
 ## @cenk1cenk2/react-template-components [1.0.3](https://github.com/cenk1cenk2/react-template/compare/@cenk1cenk2/react-template-components@1.0.2...@cenk1cenk2/react-template-components@1.0.3) (2020-11-06)
 
 
