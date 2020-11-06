@@ -1,11 +1,13 @@
 import React, { Fragment } from 'react'
 import styled, { css } from 'styled-components'
 
-export const PageLoader: React.FC = () => {
+export type PageLoaderProps = LoaderProps
+
+export const PageLoader: React.FC<PageLoaderProps> = (props) => {
   return (
     <Fragment>
       {/* Initial Page Loader */}
-      <Loader>
+      <Loader logo={props.logo}>
         <div className="base">
           <div className="logo" />
           <div className="spinner">
@@ -115,8 +117,13 @@ export const NProgressStyles = styled.div(
   `
 )
 
-export const Loader = styled.div(
-  ({ theme }) => css`
+interface LoaderProps {
+  /** Logo is required only when backdrop is opted in to */
+  logo?: string
+}
+
+export const Loader = styled.div<LoaderProps>(
+  ({ theme, logo }) => css`
     /* Make clicks pass-through */
     position: absolute;
     top: 0;
@@ -151,7 +158,7 @@ export const Loader = styled.div(
       border-radius: 50%;
       margin: auto;
       color: #242424;
-      background: url('../assets/imgs/logo/logo.svg') no-repeat 50%/70% #121212;
+      background: url(${logo}) no-repeat 50%/70% #121212;
       box-shadow: inset 0 0 0 2px #404040;
       transform: translate(0, -25%);
     }

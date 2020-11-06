@@ -3,6 +3,7 @@ import { useProgress } from '@cenk1cenk2/react-template-components'
 import { StylesProvider } from '@material-ui/core'
 import CssBaseline from '@material-ui/core/CssBaseline'
 import { ThemeProvider } from '@material-ui/styles'
+import LogoImage from '@test-app/assets/img/logo/logo.svg'
 import { createBrowserHistory } from 'history'
 import React from 'react'
 import { Route, Router, Switch } from 'react-router-dom'
@@ -13,7 +14,7 @@ import { FrontendTemplate } from './pages/frontend'
 const App: React.FC = () => {
   const history = createBrowserHistory()
   const theme = generateTheme({ palette: AvailablePalettes.DARK, design: AvailableDesigns.DEFAULT })
-  useProgress({ theme })
+  useProgress({ theme, logo: LogoImage })
 
   return (
     <StylesProvider injectFirst>

@@ -4,7 +4,7 @@ import { createMuiTheme } from '@material-ui/core'
 
 import { AvailableDesigns, AvailablePalettes, DesignMap, PaletteMap } from './available.theme'
 
-export const generateTheme = (options: { palette: AvailablePalettes; design: AvailableDesigns }): Theme => {
+export const generateTheme = (options: { palette: AvailablePalettes, design: AvailableDesigns }): Theme => {
   const palette = PaletteMap[options.palette]
   const design = DesignMap[options.design]
 
@@ -21,7 +21,7 @@ export const generateTheme = (options: { palette: AvailablePalettes; design: Ava
         }
       },
       typography: {
-        fontFamily: ['Karla'].join(','),
+        fontFamily: [ 'Karla' ].join(','),
         h1: {
           fontFace: 'Roboto'
         },

@@ -1,5 +1,5 @@
 import { Pulldown } from '@cenk1cenk2/react-template-components'
-import LogoImage from '@test-app/assets/img/logo/logo.svg'
+import { ReactComponent as LogoImage } from '@test-app/assets/img/logo/logo.svg'
 import React, { Fragment } from 'react'
 
 export const FrontendTemplate: React.FC = () => {

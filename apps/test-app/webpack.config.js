@@ -24,18 +24,7 @@ module.exports = (config, workspace) => {
         },
         {
           test: /\.svg$/,
-          use: [
-            {
-              loader: '@svgr/webpack',
-              options: {
-                dimensions: true,
-                replaceAttrValues: {
-                  '#ff00ff': 'currentColor',
-                  '#f0f': 'currentColor'
-                }
-              }
-            }
-          ]
+          use: [ '@svgr/webpack', 'url-loader' ]
         },
         {
           test: /\.(jpg|png)$/,

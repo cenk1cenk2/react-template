@@ -17,8 +17,7 @@
             "polyfills": "apps/test-app/src/polyfills.ts",
             "tsConfig": "apps/test-app/tsconfig.json",
             "sourceMap": true,
-            "assets": [
-              {
+            "assets": [{
                 "glob": "favicon.ico",
                 "input": "apps/test-app/public",
                 "output": "."
@@ -42,13 +41,11 @@
               "namedChunks": false,
               "extractLicenses": true,
               "vendorChunk": false,
-              "budgets": [
-                {
-                  "type": "initial",
-                  "maximumWarning": "2mb",
-                  "maximumError": "5mb"
-                }
-              ]
+              "budgets": [{
+                "type": "initial",
+                "maximumWarning": "2mb",
+                "maximumError": "5mb"
+              }]
             }
           }
         },
@@ -86,11 +83,10 @@
             "tsConfig": "libs/base/tsconfig.build.json",
             "project": "libs/base/package.json",
             "entryFile": "libs/base/src/index.ts",
-            "externals": ["react", "react-dom", "react-is"],
+            "externals": ["react", "react-dom", "react-dom/server", "react-is", "stream"],
             "babelConfig": "@nrwl/react/plugins/bundle-babel",
-            "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
-            "globals": [
-              {
+            "rollupConfig": "rollup.config.js",
+            "globals": [{
                 "moduleId": "@material-ui/core",
                 "global": "@material-ui/core"
               },
@@ -99,8 +95,7 @@
                 "global": "styled-components"
               }
             ],
-            "assets": [
-              {
+            "assets": [{
                 "glob": "README.md",
                 "input": ".",
                 "output": "."
@@ -134,11 +129,10 @@
             "tsConfig": "libs/components/tsconfig.build.json",
             "project": "libs/components/package.json",
             "entryFile": "libs/components/src/index.ts",
-            "externals": ["react", "react-dom", "react-is"],
+            "externals": ["react", "react-dom", "react-dom/server", "react-is", "stream"],
             "babelConfig": "@nrwl/react/plugins/bundle-babel",
-            "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
-            "globals": [
-              {
+            "rollupConfig": "rollup.config.js",
+            "globals": [{
                 "moduleId": "@material-ui/core",
                 "global": "@material-ui/core"
               },
@@ -151,8 +145,7 @@
                 "global": "react"
               }
             ],
-            "assets": [
-              {
+            "assets": [{
                 "glob": "README.md",
                 "input": ".",
                 "output": "."
