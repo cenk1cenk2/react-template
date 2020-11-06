@@ -12,8 +12,8 @@ module.exports = {
     [
       '@semantic-release/exec',
       {
-        prepareCmd: 'cd ../../ && yarn build:one components --with-deps && ls -lah ../../dist/ && ls -lah ../../dist/react-template-components',
-        failCmd: 'echo "Building failed." && exit 127'
+        prepareCmd: 'cd ../../ && yarn build:one components --with-deps',
+        failCmd: 'echo "Building failed."  && ls -lah ../../dist/ && ls -lah ../../dist/react-template-components && exit 127'
       }
     ],
     [
