@@ -42,6 +42,6 @@ const Logo = styled.div(
     width: ${theme.typography.fontSize}px;
     height: ${theme.typography.fontSize}px;
     margin-right: ${theme.typography.fontSize / 2}px;
-    margin-top: ${theme.typography.fontSize / 3}px;
+    margin-top: ${theme.typography.fontSize / 4}px;
   `
 )

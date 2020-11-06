@@ -1,4 +1,5 @@
 import { AvailableDesigns, AvailablePalettes, generateTheme, GlobalStyles } from '@cenk1cenk2/react-template-base'
+import { useProgress } from '@cenk1cenk2/react-template-components'
 import { StylesProvider } from '@material-ui/core'
 import CssBaseline from '@material-ui/core/CssBaseline'
 import { ThemeProvider } from '@material-ui/styles'
@@ -9,10 +10,10 @@ import { ThemeProvider as StyledThemeProvider } from 'styled-components'
 
 import { FrontendTemplate } from './pages/frontend'
 
-// eslint-disable-next-line no-undef
 const App: React.FC = () => {
   const history = createBrowserHistory()
   const theme = generateTheme({ palette: AvailablePalettes.DARK, design: AvailableDesigns.DEFAULT })
+  useProgress({ theme })
 
   return (
     <StylesProvider injectFirst>
