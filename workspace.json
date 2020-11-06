@@ -17,8 +17,7 @@
             "polyfills": "apps/test-app/src/polyfills.ts",
             "tsConfig": "apps/test-app/tsconfig.json",
             "sourceMap": true,
-            "assets": [
-              {
+            "assets": [{
                 "glob": "favicon.ico",
                 "input": "apps/test-app/public",
                 "output": "."
@@ -42,13 +41,11 @@
               "namedChunks": false,
               "extractLicenses": true,
               "vendorChunk": false,
-              "budgets": [
-                {
-                  "type": "initial",
-                  "maximumWarning": "2mb",
-                  "maximumError": "5mb"
-                }
-              ]
+              "budgets": [{
+                "type": "initial",
+                "maximumWarning": "2mb",
+                "maximumError": "5mb"
+              }]
             }
           }
         },
@@ -89,8 +86,7 @@
             "externals": ["react", "react-dom", "react-dom/server", "react-is", "stream"],
             "babelConfig": "@nrwl/react/plugins/bundle-babel",
             "rollupConfig": "rollup.config.js",
-            "globals": [
-              {
+            "globals": [{
                 "moduleId": "@material-ui/core",
                 "global": "@material-ui/core"
               },
@@ -99,9 +95,8 @@
                 "global": "styled-components"
               }
             ],
-            "assets": [
-              {
-                "glob": "README.md",
+            "assets": [{
+                "glob": "libs/base/README.md",
                 "input": ".",
                 "output": "."
               },
@@ -137,8 +132,7 @@
             "externals": ["react", "react-dom", "react-dom/server", "react-is", "stream"],
             "babelConfig": "@nrwl/react/plugins/bundle-babel",
             "rollupConfig": "rollup.config.js",
-            "globals": [
-              {
+            "globals": [{
                 "moduleId": "@material-ui/core",
                 "global": "@material-ui/core"
               },
@@ -151,9 +145,8 @@
                 "global": "react"
               }
             ],
-            "assets": [
-              {
-                "glob": "README.md",
+            "assets": [{
+                "glob": "libs/components/README.md",
                 "input": ".",
                 "output": "."
               },
