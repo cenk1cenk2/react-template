@@ -41,6 +41,10 @@
       "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
     }
   },
+  "workspaces": {
+    "nohoist": [],
+    "packages": ["apps/*", "libs/*"]
+  },
   "resolutions": {
     "**/react-is": "^17.0.1"
   },
