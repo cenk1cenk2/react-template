@@ -18,7 +18,7 @@ module.exports = {
     [
       '@semantic-release/npm',
       {
-        pkgRoot: '../../dist/components'
+        pkgRoot: '../../dist/react-template-components'
       }
     ]
   ]

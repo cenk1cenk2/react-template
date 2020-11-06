@@ -1,7 +1,5 @@
-# components
+## @cenk1cenk2/react-template-components
 
-This library was generated with [Nx](https://nx.dev).
+[![Version](https://img.shields.io/npm/v/react-template-components.svg)](https://npmjs.org/package/react-template-components) [![Downloads/week](https://img.shields.io/npm/dw/react-template-components.svg)](https://npmjs.org/package/react-template-components) [![Dependencies](https://img.shields.io/librariesio/release/npm/react-template-components)](https://npmjs.org/package/react-template-components) [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
-## Running unit tests
-
-Run `nx test components` to execute the unit tests via [Jest](https://jestjs.io).
+[**Read more...**](libs/components/README.md)
