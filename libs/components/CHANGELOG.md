@@ -1,3 +1,10 @@
+## @cenk1cenk2/react-template-components [1.0.5](https://github.com/cenk1cenk2/react-template/compare/@cenk1cenk2/react-template-components@1.0.4...@cenk1cenk2/react-template-components@1.0.5) (2020-11-06)
+
+
+### Bug Fixes
+
+* **drone:** qwe ([4376df4](https://github.com/cenk1cenk2/react-template/commit/4376df4041f261e86b9cb02286434094f193ec71))
+
 ## @cenk1cenk2/react-template-components [1.0.4](https://github.com/cenk1cenk2/react-template/compare/@cenk1cenk2/react-template-components@1.0.3...@cenk1cenk2/react-template-components@1.0.4) (2020-11-06)
 
 
