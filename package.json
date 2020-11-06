@@ -53,13 +53,13 @@
   },
   "dependencies": {
     "config": "^3.3.2",
-    "document-register-element": "^1.13.1",
+    "document-register-element": "^1.14.10",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-is": "^17.0.1",
     "react-router-dom": "^5.2.0",
     "roboto-fontface": "^0.10.0",
-    "styled-components": "^5.1.1"
+    "styled-components": "^5.2.1"
   },
   "devDependencies": {
     "@babel/core": "7.12.3",
