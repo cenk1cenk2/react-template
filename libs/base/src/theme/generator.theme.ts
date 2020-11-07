@@ -14,7 +14,7 @@ export const generateTheme = (options: { palette: AvailablePalettes, design: Ava
       breakpoints: {
         values: {
           xs: 0,
-          sm: 620,
+          sm: 720,
           md: 940,
           lg: 1200,
           xl: 1980
