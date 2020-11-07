@@ -40,7 +40,7 @@ export function useProgress (
   useEffect(() => {
     setIsLoading(false)
     if (!isLoading && props.mountOnly) {
-      // nprogress.done()
+      nprogress.done()
     }
   })
 
