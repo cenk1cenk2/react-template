@@ -30,10 +30,10 @@ export const NProgressBar: React.FC = () => {
     <Fragment>
       <NProgressStyles>
         <div className="bar" role="bar">
-          <div className="peg"></div>
+          <div className="peg" />
         </div>
         <div className="spinner" role="spinner">
-          <div className="spinner-icon"></div>
+          <div className="spinner-icon" />
         </div>
       </NProgressStyles>
     </Fragment>
