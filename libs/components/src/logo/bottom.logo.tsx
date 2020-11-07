@@ -28,7 +28,7 @@ export const BottomLogo: React.FC<BottomLogoProps> = (props) => {
           </Grid>
         </Grid>
         <Grid item>
-          <Typography variant="h6" color="textSecondary">
+          <Typography variant="h6">
             <small>v{props.package.version}</small>
           </Typography>
         </Grid>
@@ -42,6 +42,6 @@ const Logo = styled.div(
     width: ${theme.typography.fontSize}px;
     height: ${theme.typography.fontSize}px;
     margin-right: ${theme.typography.fontSize / 2}px;
-    margin-top: ${theme.typography.fontSize / 4}px;
+    margin-top: ${theme.typography.fontSize / 8}px;
   `
 )

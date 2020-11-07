@@ -41,9 +41,9 @@ export const NProgressBar: React.FC = () => {
 }
 
 export const NProgressStyles = styled.div(
-  () => css`
+  ({ theme }) => css`
     .bar {
-      background: #efefef;
+      background: ${theme.palette.primary.main};
       position: fixed;
       z-index: 9999;
       top: 0;
@@ -59,7 +59,7 @@ export const NProgressStyles = styled.div(
       right: 0px;
       width: 100px;
       height: 100%;
-      box-shadow: 0 0 25px #000000, 0 0 10px #000000;
+      box-shadow: 0px 1px 10px ${theme.palette.primary.light}, 0px 2px 0px ${theme.palette.primary.dark};
       opacity: 1;
       -webkit-transform: rotate(3deg) translate(0px, -4px);
       -ms-transform: rotate(3deg) translate(0px, -4px);
@@ -80,8 +80,8 @@ export const NProgressStyles = styled.div(
       height: 18px;
       box-sizing: border-box;
       border: solid 2px transparent;
-      border-top-color: #efefef;
-      border-left-color: #efefef;
+      border-top-color: ${theme.palette.primary.dark};
+      border-left-color: ${theme.palette.primary.dark};
       border-radius: 50%;
       -webkit-animation: nprogress-spinner 400ms linear infinite;
       animation: nprogress-spinner 400ms linear infinite;
@@ -157,14 +157,14 @@ export const Loader = styled.div<LoaderProps>(
       height: 150px;
       border-radius: 50%;
       margin: auto;
-      color: #242424;
-      background: url(${logo}) no-repeat 50%/70% #121212;
-      box-shadow: inset 0 0 0 2px #404040;
+      color: ${theme.palette.primary.main};
+      fill: ${theme.palette.primary.main};
+      background: url(${logo}) no-repeat 50%/70% ${theme.palette.background.default};
+      box-shadow: inset 0 0 0 2px ${theme.palette.background.paper};
       transform: translate(0, -25%);
     }
 
     .logo svg {
-      fill: ${theme.palette.primary.main};
     }
 
     .logo::before {
@@ -174,8 +174,8 @@ export const Loader = styled.div<LoaderProps>(
       width: 150px;
       height: 150px;
       border-radius: 50%;
-      border-top: 2px solid ${theme.palette.primary.light};
-      border-right: 2px solid ${theme.palette.primary.light};
+      border-top: 2px solid ${theme.palette.primary.dark};
+      border-right: 2px solid ${theme.palette.primary.dark};
       animation: logospinner 2.8s ease-in-out infinite;
     }
 
@@ -216,7 +216,7 @@ export const Loader = styled.div<LoaderProps>(
       -moz-filter: blur(4px);
       -o-filter: blur(4px);
       -ms-filter: blur(4px);
-      background: #efefef;
+      background: ${theme.palette.primary.light};
       border-radius: 50%;
       transform: translateX(0);
       animation: dot 2.8s infinite;
@@ -240,7 +240,7 @@ export const Loader = styled.div<LoaderProps>(
       -moz-filter: blur(4px);
       -o-filter: blur(4px);
       -ms-filter: blur(4px);
-      background: #efefef;
+      background: ${theme.palette.primary.light};
       border-radius: 50%;
     }
 

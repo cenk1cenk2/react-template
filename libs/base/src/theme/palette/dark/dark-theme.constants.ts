@@ -14,40 +14,40 @@ export const DarkPalette: Theme['palette'] = {
     white: '#efefef'
   },
   primary: {
-    dark: '#52a472',
-    main: '#3fa535',
-    light: '#ECF6EB',
-    contrastText: '#fff'
+    main: '#C44330',
+    dark: '#832D20',
+    light: '#D76B5B',
+    contrastText: '#efefef'
   },
   secondary: {
-    light: '#ff4081',
-    main: '#f50057',
-    dark: '#c51162',
-    contrastText: '#fff'
+    main: '#32908F',
+    light: '#59C5C3',
+    dark: '#205B5A',
+    contrastText: '#efefef'
   },
-  error: {
-    light: '#e57373',
-    main: '#f44336',
-    dark: '#d32f2f',
-    contrastText: '#fff'
+  info: {
+    main: '#2196f3',
+    light: '#bfdcf5',
+    dark: '#1976d2',
+    contrastText: '#efefef'
+  },
+  success: {
+    main: '#78F029',
+    light: '#B7F78D',
+    dark: '#2A5F07',
+    contrastText: 'rgba(0, 0, 0, 0.87)'
   },
   warning: {
+    main: '#F0CE5C',
     light: '#ffb74d',
-    main: '#ff9800',
     dark: '#f57c00',
     contrastText: 'rgba(0, 0, 0, 0.87)'
   },
-  info: {
-    light: '#bfdcf5',
-    main: '#2196f3',
-    dark: '#1976d2',
-    contrastText: '#fff'
-  },
-  success: {
-    light: '#81c784',
-    main: '#4caf50',
-    dark: '#388e3c',
-    contrastText: 'rgba(0, 0, 0, 0.87)'
+  error: {
+    main: '#f44336',
+    light: '#e57373',
+    dark: '#d32f2f',
+    contrastText: '#efefef'
   },
   grey: {
     50: '#fafafa',
@@ -66,9 +66,9 @@ export const DarkPalette: Theme['palette'] = {
     A700: '#616161'
   },
   text: {
-    primary: '#efefef',
-    secondary: '#E0E0E0',
-    disabled: '#cccccc',
+    primary: '#EFEFEF',
+    secondary: '#F0F0F0',
+    disabled: '#CCCCCC',
     hint: 'rgba(239, 239, 239, 0.38)'
   },
   divider: 'rgba(239, 239, 239, 0.12)'

@@ -101,8 +101,8 @@
             ],
             "assets": [
               {
-                "glob": "libs/base/README.md",
-                "input": ".",
+                "glob": "README.md",
+                "input": "libs/base/",
                 "output": "."
               },
               {
@@ -153,8 +153,8 @@
             ],
             "assets": [
               {
-                "glob": "libs/components/README.md",
-                "input": ".",
+                "glob": "README.md",
+                "input": "libs/components/",
                 "output": "."
               },
               {

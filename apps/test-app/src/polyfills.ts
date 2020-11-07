@@ -5,6 +5,5 @@
  */
 import 'core-js/stable'
 import 'regenerator-runtime/runtime'
-import 'fontsource-lato'
 import 'roboto-fontface'
-import 'typeface-karla'
+import 'fontsource-raleway'

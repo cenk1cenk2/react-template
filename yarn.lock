@@ -1655,6 +1655,30 @@
     minimatch "3.0.4"
     tslib "^1.9.3"
 
+"@nrwl/node@^10.3.2":
+  version "10.3.2"
+  resolved "https://registry.yarnpkg.com/@nrwl/node/-/node-10.3.2.tgz#5606f5b324834596760ed9dab8a94dd10db51735"
+  integrity sha512-6NSUyBlSA2Z2P4vfdQJTYp+0zCIIYGtDplfdw4AtMlO7EruWZ9DWds0R14fcTTsB9zZJF/SuFudgDeCPC5zyzA==
+  dependencies:
+    "@angular-devkit/architect" "~0.1001.3"
+    "@angular-devkit/build-webpack" "~0.1001.3"
+    "@angular-devkit/core" "~10.1.3"
+    "@angular-devkit/schematics" "~10.1.3"
+    "@nrwl/jest" "10.3.2"
+    "@nrwl/linter" "10.3.2"
+    circular-dependency-plugin "5.2.0"
+    copy-webpack-plugin "6.0.3"
+    fork-ts-checker-webpack-plugin "^3.1.1"
+    license-webpack-plugin "2.1.2"
+    source-map-support "0.5.16"
+    tree-kill "1.2.2"
+    ts-loader "5.4.5"
+    tsconfig-paths-webpack-plugin "3.2.0"
+    webpack "4.42.0"
+    webpack-dev-server "3.11.0"
+    webpack-merge "4.2.1"
+    webpack-node-externals "1.7.2"
+
 "@nrwl/react@^10.3.2":
   version "10.3.2"
   resolved "https://registry.yarnpkg.com/@nrwl/react/-/react-10.3.2.tgz#6142330a266413169bb788512b7f84311962b8f7"
@@ -6003,10 +6027,10 @@ follow-redirects@^1.0.0:
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.13.0.tgz#b42e8d93a2a7eea5ed88633676d6597bc8e384db"
   integrity sha512-aq6gF1BEKje4a9i9+5jimNFIpq4Q1WiwBToeRK5NvZBd/TRsmW8BsJfOEGkr76TbOyPVD3OVDN910EcUNtRYEA==
 
-fontsource-lato@^3.0.9:
+fontsource-varela@^3.0.9:
   version "3.0.9"
-  resolved "https://registry.yarnpkg.com/fontsource-lato/-/fontsource-lato-3.0.9.tgz#c1578386cdf0b6273b6bcc01de1ed14f62168219"
-  integrity sha512-npS3m7tBpAlHOMexRyOGZF1w813qHpk6lgQeTJGLAYd3lgxtJOJnSCsxJxd8vPgQ6w6+jyO9YoWKmunRCsHM8g==
+  resolved "https://registry.yarnpkg.com/fontsource-varela/-/fontsource-varela-3.0.9.tgz#5b5ea41bd58c33383f9bef7368dae494398c792a"
+  integrity sha512-yxYhgCClJQ4w+NC8XWQobL9hiwUU7JAJ/JzBUG9kwncRRF5705sguanJTtwK7V/zhoplBMY9j1+CYh+7jfxQDw==
 
 for-in@^0.1.3:
   version "0.1.8"
@@ -12154,7 +12178,7 @@ style-loader@1.0.0:
     loader-utils "^1.2.3"
     schema-utils "^2.0.1"
 
-styled-components@^5.2.1:
+styled-components@^5.1.1:
   version "5.2.1"
   resolved "https://registry.yarnpkg.com/styled-components/-/styled-components-5.2.1.tgz#6ed7fad2dc233825f64c719ffbdedd84ad79101a"
   integrity sha512-sBdgLWrCFTKtmZm/9x7jkIabjFNVzCUeKfoQsM6R3saImkUnjx0QYdLwJHBjY9ifEcmjDamJDVfknWm1yxZPxQ==

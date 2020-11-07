@@ -58,8 +58,7 @@
     "react-dom": "^17.0.1",
     "react-is": "^17.0.1",
     "react-router-dom": "^5.2.0",
-    "roboto-fontface": "^0.10.0",
-    "styled-components": "^5.2.1"
+    "styled-components": "^5.1.1"
   },
   "devDependencies": {
     "@babel/core": "7.12.3",
@@ -72,6 +71,7 @@
     "@nrwl/cli": "10.3.2",
     "@nrwl/eslint-plugin-nx": "10.3.2",
     "@nrwl/jest": "10.3.2",
+    "@nrwl/node": "^10.3.2",
     "@nrwl/react": "^10.3.2",
     "@nrwl/web": "10.3.2",
     "@nrwl/workspace": "10.3.2",
@@ -101,11 +101,12 @@
     "eslint-plugin-jsx-a11y": "6.4.1",
     "eslint-plugin-react": "7.21.5",
     "eslint-plugin-react-hooks": "4.2.0",
-    "fontsource-lato": "^3.0.9",
+    "fontsource-varela": "^3.0.9",
     "husky": "^4.3.0",
     "jest": "26.6.3",
     "lint-staged": "^10.5.1",
     "prettier": "^2.1.2",
+    "roboto-fontface": "^0.10.0",
     "rollup-plugin-auto-named-exports": "^1.0.0-beta.3",
     "ts-jest": "26.4.3",
     "ts-node": "~9.0.0",
