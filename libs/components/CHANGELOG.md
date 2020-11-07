@@ -1,3 +1,10 @@
+## @cenk1cenk2/react-template-components [1.0.9](https://github.com/cenk1cenk2/react-template/compare/@cenk1cenk2/react-template-components@1.0.8...@cenk1cenk2/react-template-components@1.0.9) (2020-11-07)
+
+
+### Bug Fixes
+
+* **progress-bar:** fix debug setup going to prod ([c117bc6](https://github.com/cenk1cenk2/react-template/commit/c117bc6693d24a50a2b42b056bd54ec30e87f52d))
+
 ## @cenk1cenk2/react-template-components [1.0.8](https://github.com/cenk1cenk2/react-template/compare/@cenk1cenk2/react-template-components@1.0.7...@cenk1cenk2/react-template-components@1.0.8) (2020-11-07)
 
 
