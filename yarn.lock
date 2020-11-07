@@ -1696,6 +1696,30 @@
     minimatch "3.0.4"
     tslib "^1.9.3"
 
+"@nrwl/node@^10.3.2":
+  version "10.3.2"
+  resolved "https://registry.yarnpkg.com/@nrwl/node/-/node-10.3.2.tgz#5606f5b324834596760ed9dab8a94dd10db51735"
+  integrity sha512-6NSUyBlSA2Z2P4vfdQJTYp+0zCIIYGtDplfdw4AtMlO7EruWZ9DWds0R14fcTTsB9zZJF/SuFudgDeCPC5zyzA==
+  dependencies:
+    "@angular-devkit/architect" "~0.1001.3"
+    "@angular-devkit/build-webpack" "~0.1001.3"
+    "@angular-devkit/core" "~10.1.3"
+    "@angular-devkit/schematics" "~10.1.3"
+    "@nrwl/jest" "10.3.2"
+    "@nrwl/linter" "10.3.2"
+    circular-dependency-plugin "5.2.0"
+    copy-webpack-plugin "6.0.3"
+    fork-ts-checker-webpack-plugin "^3.1.1"
+    license-webpack-plugin "2.1.2"
+    source-map-support "0.5.16"
+    tree-kill "1.2.2"
+    ts-loader "5.4.5"
+    tsconfig-paths-webpack-plugin "3.2.0"
+    webpack "4.42.0"
+    webpack-dev-server "3.11.0"
+    webpack-merge "4.2.1"
+    webpack-node-externals "1.7.2"
+
 "@nrwl/react@^10.3.2":
   version "10.3.2"
   resolved "https://registry.yarnpkg.com/@nrwl/react/-/react-10.3.2.tgz#6142330a266413169bb788512b7f84311962b8f7"
@@ -6100,6 +6124,11 @@ fontsource-lato@^3.0.9:
   version "3.0.9"
   resolved "https://registry.yarnpkg.com/fontsource-lato/-/fontsource-lato-3.0.9.tgz#c1578386cdf0b6273b6bcc01de1ed14f62168219"
   integrity sha512-npS3m7tBpAlHOMexRyOGZF1w813qHpk6lgQeTJGLAYd3lgxtJOJnSCsxJxd8vPgQ6w6+jyO9YoWKmunRCsHM8g==
+
+fontsource-raleway@^3.0.9:
+  version "3.0.9"
+  resolved "https://registry.yarnpkg.com/fontsource-raleway/-/fontsource-raleway-3.0.9.tgz#c05a9af367d8016b9b1ff8c39deb5ae897673aa5"
+  integrity sha512-TtvH82FIK0SgNc/ynLUYozwiSk8IB6FgZ0ujZ0sgUhpdAvH+gKaCoopT9faBh9c59JGwicIej0x2fWz7NhsKSQ==
 
 for-in@^0.1.3:
   version "0.1.8"

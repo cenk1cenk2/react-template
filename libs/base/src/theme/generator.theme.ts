@@ -21,7 +21,7 @@ export const generateTheme = (options: { palette: AvailablePalettes, design: Ava
         }
       },
       typography: {
-        fontFamily: [ 'Karla' ].join(','),
+        fontFamily: [ 'Raleway' ].join(','),
         h1: {
           fontFace: 'Roboto'
         },
