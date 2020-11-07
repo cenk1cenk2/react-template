@@ -21,28 +21,31 @@ export const generateTheme = (options: { palette: AvailablePalettes, design: Ava
         }
       },
       typography: {
-        fontFamily: [ 'Raleway' ].join(','),
+        fontFamily: [ 'Varela' ].join(','),
         h1: {
-          fontFace: 'Roboto'
+          fontFace: 'Roboto',
+          fontWeight: 'bold',
+          fontSize: '4rem'
         },
         h2: {
-          fontFace: 'Roboto'
+          fontFace: 'Roboto',
+          fontWeight: 'bold',
+          fontSize: '3rem'
         },
         h3: {
-          fontFace: 'Roboto'
+          fontFace: 'Roboto',
+          fontWeight: 'bold',
+          fontSize: '2rem'
         },
         h4: {
-          fontSize: '1.125rem',
-          fontWeight: 'bold'
+          fontSize: '1.2rem'
         },
         h5: {
-          fontSize: '1rem',
-          fontWeight: 'bold',
-          color: palette.grey[700]
+          fontSize: '1rem'
         },
         h6: {
           fontSize: '0.875rem',
-          fontWeight: 'bold'
+          color: palette.grey[600]
         }
       },
       overrides: {
@@ -68,7 +71,8 @@ export const generateTheme = (options: { palette: AvailablePalettes, design: Ava
           fontSizeSmall: {
             fontSize: 16
           }
-        }
+        },
+        MuiButton: {}
       },
       mixins: {
         toolbar: {
@@ -77,6 +81,9 @@ export const generateTheme = (options: { palette: AvailablePalettes, design: Ava
         }
       }
     }),
+    shape: {
+      borderRadius: 0
+    },
     design
   }
 }

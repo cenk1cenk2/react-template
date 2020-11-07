@@ -6120,15 +6120,15 @@ follow-redirects@^1.0.0:
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.13.0.tgz#b42e8d93a2a7eea5ed88633676d6597bc8e384db"
   integrity sha512-aq6gF1BEKje4a9i9+5jimNFIpq4Q1WiwBToeRK5NvZBd/TRsmW8BsJfOEGkr76TbOyPVD3OVDN910EcUNtRYEA==
 
-fontsource-lato@^3.0.9:
-  version "3.0.9"
-  resolved "https://registry.yarnpkg.com/fontsource-lato/-/fontsource-lato-3.0.9.tgz#c1578386cdf0b6273b6bcc01de1ed14f62168219"
-  integrity sha512-npS3m7tBpAlHOMexRyOGZF1w813qHpk6lgQeTJGLAYd3lgxtJOJnSCsxJxd8vPgQ6w6+jyO9YoWKmunRCsHM8g==
-
 fontsource-raleway@^3.0.9:
   version "3.0.9"
   resolved "https://registry.yarnpkg.com/fontsource-raleway/-/fontsource-raleway-3.0.9.tgz#c05a9af367d8016b9b1ff8c39deb5ae897673aa5"
   integrity sha512-TtvH82FIK0SgNc/ynLUYozwiSk8IB6FgZ0ujZ0sgUhpdAvH+gKaCoopT9faBh9c59JGwicIej0x2fWz7NhsKSQ==
+
+fontsource-varela@^3.0.9:
+  version "3.0.9"
+  resolved "https://registry.yarnpkg.com/fontsource-varela/-/fontsource-varela-3.0.9.tgz#5b5ea41bd58c33383f9bef7368dae494398c792a"
+  integrity sha512-yxYhgCClJQ4w+NC8XWQobL9hiwUU7JAJ/JzBUG9kwncRRF5705sguanJTtwK7V/zhoplBMY9j1+CYh+7jfxQDw==
 
 for-in@^0.1.3:
   version "0.1.8"
