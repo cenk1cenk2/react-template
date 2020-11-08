@@ -1,3 +1,10 @@
+## @cenk1cenk2/react-template-base [1.0.5](https://github.com/cenk1cenk2/react-template/compare/@cenk1cenk2/react-template-base@1.0.4...@cenk1cenk2/react-template-base@1.0.5) (2020-11-07)
+
+
+### Bug Fixes
+
+* fix breakpoints ([4be2957](https://github.com/cenk1cenk2/react-template/commit/4be295732393d3b448e6a0511df19d0c80b44037))
+
 ## @cenk1cenk2/react-template-base [1.0.4](https://github.com/cenk1cenk2/react-template/compare/@cenk1cenk2/react-template-base@1.0.3...@cenk1cenk2/react-template-base@1.0.4) (2020-11-07)
 
 
