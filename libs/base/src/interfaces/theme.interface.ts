@@ -4,12 +4,12 @@ import * as CSS from 'csstype'
 export interface Theme extends BaseTheme {
   design: {
     header: {
-      headerSizeMin: CSS.Property.MinWidth<string>
-      logoFieldWidth: CSS.Property.Width<string>
+      headerSizeMin: CSS.Property.MinWidth<number>
+      logoFieldWidth: CSS.Property.Width<number>
     }
     navigation: {
-      width: CSS.Property.Width<string>
-      collapseWidth: CSS.Property.Width<string>
+      width: CSS.Property.Width<number>
+      collapseWidth: CSS.Property.Width<number>
     }
   }
 }

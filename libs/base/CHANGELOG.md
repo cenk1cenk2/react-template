@@ -1,9 +1,8 @@
 ## @cenk1cenk2/react-template-base [1.0.4](https://github.com/cenk1cenk2/react-template/compare/@cenk1cenk2/react-template-base@1.0.3...@cenk1cenk2/react-template-base@1.0.4) (2020-11-07)
 
-
 ### Bug Fixes
 
-* fix page loader and some theming ([bac903a](https://github.com/cenk1cenk2/react-template/commit/bac903acdc5d32ed158045ef4b0911b08ee59f30))
+- fix page loader and some theming ([bac903a](https://github.com/cenk1cenk2/react-template/commit/bac903acdc5d32ed158045ef4b0911b08ee59f30))
 
 ## @cenk1cenk2/react-template-base [1.0.3](https://github.com/cenk1cenk2/react-template/compare/@cenk1cenk2/react-template-base@1.0.2...@cenk1cenk2/react-template-base@1.0.3) (2020-11-06)
 

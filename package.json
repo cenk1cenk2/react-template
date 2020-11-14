@@ -52,13 +52,19 @@
     "**/react-is": "^17.0.1"
   },
   "dependencies": {
+    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@fortawesome/react-fontawesome": "^0.1.12",
+    "clsx": "^1.1.1",
     "config": "^3.3.2",
     "document-register-element": "^1.14.10",
+    "nprogress": "^0.2.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-is": "^17.0.1",
     "react-router-dom": "^5.2.0",
-    "styled-components": "^5.1.1"
+    "recoil": "^0.1.2",
+    "styled-components": "^5.1.1",
+    "use-debounce": "^5.0.4"
   },
   "devDependencies": {
     "@babel/core": "7.12.3",
@@ -67,6 +73,7 @@
     "@babel/preset-react": "7.12.5",
     "@babel/preset-typescript": "7.12.1",
     "@cenk1cenk2/eslint-config": "^0.4.22",
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
     "@material-ui/core": "^4.11.0",
     "@nrwl/cli": "10.3.2",
     "@nrwl/eslint-plugin-nx": "10.3.2",
@@ -107,12 +114,10 @@
     "lint-staged": "^10.5.1",
     "prettier": "^2.1.2",
     "roboto-fontface": "^0.10.0",
-    "rollup-plugin-auto-named-exports": "^1.0.0-beta.3",
     "ts-jest": "26.4.3",
     "ts-node": "~9.0.0",
     "tslint": "~6.1.3",
     "typeface-karla": "^1.1.13",
-    "typescript": "~4.0.5",
-    "use-progress": "^2.0.1"
+    "typescript": "~4.0.5"
   }
 }
