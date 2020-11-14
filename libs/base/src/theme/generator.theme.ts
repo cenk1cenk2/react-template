@@ -49,6 +49,11 @@ export const generateTheme = (options: { palette: AvailablePalettes, design: Ava
         }
       },
       overrides: {
+        MuiToolbar: {
+          regular: {
+            background: 'transperent'
+          }
+        },
         MuiTableCell: {
           root: {
             padding: 12,

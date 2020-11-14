@@ -3,7 +3,7 @@ import { Tabs, Tab } from '@material-ui/core'
 import { withRouter, NextRouter } from 'next/router'
 import { Component, Fragment } from 'react'
 
-import { DashboardTemplateNavItems } from './index.interface'
+import { DashboardTemplateNavItems } from './dashboard-template.interface'
 
 interface Props {
   items?: DashboardTemplateNavItems[]

@@ -10,7 +10,8 @@
     "../../node_modules/@nrwl/react/typings/cssmodule.d.ts",
     "../../libs/base/types/react.d.ts",
     "../../libs/base/types/image.d.ts",
-    "../../libs/base/types/styled-components.d.ts"
+    "../../libs/base/types/styled-components.d.ts",
+    "../../libs/base/types/recoil.d.ts"
   ],
   "include": ["**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx"]
 }

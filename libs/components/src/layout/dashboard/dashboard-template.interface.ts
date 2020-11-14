@@ -1,15 +1,15 @@
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core'
 
+import { MaxWidths } from '../../interfaces/max-width.interface'
+
 export interface DashboardTemplateProps {
-  narrow?: boolean
+  maxWidth?: MaxWidths
   header?: {
     transperent?: boolean
   }
   navigation?: {
     collapsable?: boolean
     type?: DashboardTemplateNavTypes
-    state?: DashboardTemplateNavStates
-    mouse?: boolean
   }
   items?: DashboardTemplateNavItems[]
 }
@@ -21,16 +21,16 @@ export interface DashboardTemplateNavItems {
 }
 
 export enum DashboardTemplateNavStates {
-  open = 'open',
-  overlay = 'overlay',
-  close = 'close',
-  collapse = 'collapse'
+  OPEN = 'open',
+  OVERLAY = 'overlay',
+  CLOSE = 'close',
+  COLLAPSE = 'collapse'
 }
 
 export enum DashboardTemplateNavTypes {
-  header = 'header',
-  menu = 'menu',
-  off = 'off'
+  HEADER = 'header',
+  MENU = 'menu',
+  OFF = 'off'
 }
 
 export enum DashboardTemplateActions {
