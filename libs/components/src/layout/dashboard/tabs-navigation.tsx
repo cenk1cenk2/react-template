@@ -1,14 +1,12 @@
-import { faBars } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { Tabs as BaseTabs, Tab, useTheme, Hidden } from '@material-ui/core'
-import React, { Component, Fragment } from 'react'
+import { Hidden, Tab, Tabs as BaseTabs, useTheme } from '@material-ui/core'
+import React, { Fragment } from 'react'
 import { useLocation } from 'react-router-dom'
-import { useRecoilState, useRecoilValue, useSetRecoilState } from 'recoil'
+import { useRecoilValue } from 'recoil'
 import styled, { css } from 'styled-components'
 
 import { MaxWidths } from '../../interfaces'
 import { DashboardTemplateNavItems, DashboardTemplateNavTypes } from './dashboard.interface'
-import { NavStatesReducer, NavStatesStore, NavTypeStore } from './dashboard.store'
+import { NavTypeStore } from './dashboard.store'
 
 export interface TabsNavigationProps {
   threshold?: MaxWidths
