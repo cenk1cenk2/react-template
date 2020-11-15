@@ -64,7 +64,6 @@
     "recoil": "^0.1.2",
     "styled-components": "^5.2.1",
     "use-debounce": "^5.0.4",
-    "@tanem/react-nprogress": "^3.0.47",
     "fontsource-varela": "^3.0.9",
     "roboto-fontface": "^0.10.0"
   },
