@@ -3,9 +3,17 @@ module.exports = (options) => {
     react: 'React',
     'react-dom': 'ReactDOM',
     'react-dom/server': 'ReactDOM',
+    'react-router-dom': 'react-router-dom',
     'styled-components': 'styled',
     '@emotion/core': 'emotionCore',
-    '@emotion/styled': 'emotionStyled'
+    '@emotion/styled': 'emotionStyled',
+    recoil: 'recoil',
+    clsx: 'clsx',
+    nprogress: 'nprogress',
+    stream: 'stream',
+    'use-debounce': 'use-debounce',
+    '@fortawesome/free-solid-svg-icons': '@fortawesome/free-solid-svg-icons',
+    '@fortawesome/react-fontawesome': '@fortawesome/react-fontawesome'
   }
 
   if (Array.isArray(options.output)) {
