@@ -75,7 +75,7 @@
     "@nrwl/react": "^10.3.3",
     "@nrwl/web": "10.3.3",
     "@nrwl/workspace": "10.3.3",
-    "@tanem/react-nprogress": "^3.0.47",
+    "@tanem/react-nprogress": "^3.0.48",
     "@testing-library/react": "11.1.2",
     "@types/config": "^0.0.36",
     "@types/jest": "26.0.15",
