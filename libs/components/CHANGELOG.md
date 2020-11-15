@@ -1,3 +1,10 @@
+# @cenk1cenk2/react-template-components [1.2.0](https://github.com/cenk1cenk2/react-template/compare/@cenk1cenk2/react-template-components@1.1.0...@cenk1cenk2/react-template-components@1.2.0) (2020-11-15)
+
+
+### Features
+
+* added scroll up button ([7c8b2f7](https://github.com/cenk1cenk2/react-template/commit/7c8b2f72fd29d11fc2ea95062435a46651338a40))
+
 # @cenk1cenk2/react-template-components [1.1.0](https://github.com/cenk1cenk2/react-template/compare/@cenk1cenk2/react-template-components@1.0.9...@cenk1cenk2/react-template-components@1.1.0) (2020-11-15)
 
 
