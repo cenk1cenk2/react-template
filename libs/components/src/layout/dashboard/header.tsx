@@ -1,5 +1,4 @@
 import { BaseConfig } from '@cenk1cenk2/react-template-base'
-import { CastEvent } from '@cenk1cenk2/react-template-components'
 import { AppBar as BaseAppBar, AppBarProps, Container, Grid, Toolbar as BaseToolbar, Typography } from '@material-ui/core'
 import React, { Fragment, SVGProps, useCallback, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
@@ -39,25 +38,20 @@ export const Header: React.FC<HeaderProps> = (props) => {
 
   // listeners
   const handleScroll = useDebouncedCallback(
-    (e: CastEvent<Window>) => {
-      if (e.currentTarget?.scrollY) {
-        if (e.currentTarget?.scrollY < theme.design.header.headerSizeMin / 2) {
-          setSolidHeader(true)
-        } else {
-          setSolidHeader(false)
-        }
+    () => {
+      if (window?.pageYOffset < theme.design.header.headerSizeMin / 2) {
+        setSolidHeader(true)
+      } else {
+        setSolidHeader(false)
       }
     },
     100,
     { leading: true }
   )
 
-  const handleInit = useCallback(
-    (e: CastEvent<Window>) => {
-      handleScroll.callback(e)
-    },
-    [ handleScroll ]
-  )
+  const handleInit = useCallback(() => {
+    handleScroll.callback()
+  }, [ handleScroll ])
 
   useEffect(() => {
     window.addEventListener('load', handleInit)

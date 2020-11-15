@@ -1,4 +1,3 @@
-import { CastEvent } from '@cenk1cenk2/react-template-components'
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Fab from '@material-ui/core/Fab'
@@ -13,25 +12,20 @@ export const ScrollUpButton: React.FC = () => {
   const [ show, setShow ] = useState(false)
   // listeners
   const handleScroll = useDebouncedCallback(
-    (e: CastEvent<Window>) => {
-      if (e.currentTarget?.scrollY) {
-        if (e.currentTarget?.scrollY < theme.design.header.headerSizeMin / 2) {
-          setShow(true)
-        } else {
-          setShow(false)
-        }
+    () => {
+      if (window.pageYOffset < theme.design.header.headerSizeMin / 2) {
+        setShow(false)
+      } else {
+        setShow(true)
       }
     },
     100,
     { leading: true }
   )
 
-  const handleInit = useCallback(
-    (e: CastEvent<Window>) => {
-      handleScroll.callback(e)
-    },
-    [ handleScroll ]
-  )
+  const handleInit = useCallback(() => {
+    handleScroll.callback()
+  }, [ handleScroll ])
 
   useEffect(() => {
     window.addEventListener('load', handleInit)

@@ -1,31 +1,27 @@
 # @cenk1cenk2/react-template-components [1.1.0](https://github.com/cenk1cenk2/react-template/compare/@cenk1cenk2/react-template-components@1.0.9...@cenk1cenk2/react-template-components@1.1.0) (2020-11-15)
 
-
 ### Bug Fixes
 
-* fix globals ([beca556](https://github.com/cenk1cenk2/react-template/commit/beca55602326580a426b3d6cf2fa2541c752dfce))
-* **components:** updated states for drawer navigation ([5094b62](https://github.com/cenk1cenk2/react-template/commit/5094b62364ad6cf5d6e513c4150660bc677d507e))
-
+- fix globals ([beca556](https://github.com/cenk1cenk2/react-template/commit/beca55602326580a426b3d6cf2fa2541c752dfce))
+- **components:** updated states for drawer navigation ([5094b62](https://github.com/cenk1cenk2/react-template/commit/5094b62364ad6cf5d6e513c4150660bc677d507e))
 
 ### Features
 
-* **components:** finish standalone drawer navigation ([3de90f9](https://github.com/cenk1cenk2/react-template/commit/3de90f9e42a0c003e2b8e9ae0f9fe8e818323665))
-* **components:** mostly finished the template ([282986c](https://github.com/cenk1cenk2/react-template/commit/282986c292a77eaadd4476c66d7a14c9eab09fb8))
-* **components:** started header design for layout ([e359716](https://github.com/cenk1cenk2/react-template/commit/e359716d0deaff2c1440e3d96591d9013a38dd0a))
+- **components:** finish standalone drawer navigation ([3de90f9](https://github.com/cenk1cenk2/react-template/commit/3de90f9e42a0c003e2b8e9ae0f9fe8e818323665))
+- **components:** mostly finished the template ([282986c](https://github.com/cenk1cenk2/react-template/commit/282986c292a77eaadd4476c66d7a14c9eab09fb8))
+- **components:** started header design for layout ([e359716](https://github.com/cenk1cenk2/react-template/commit/e359716d0deaff2c1440e3d96591d9013a38dd0a))
 
 # @cenk1cenk2/react-template-components [1.1.0](https://github.com/cenk1cenk2/react-template/compare/@cenk1cenk2/react-template-components@1.0.9...@cenk1cenk2/react-template-components@1.1.0) (2020-11-15)
 
-
 ### Bug Fixes
 
-* **components:** updated states for drawer navigation ([5094b62](https://github.com/cenk1cenk2/react-template/commit/5094b62364ad6cf5d6e513c4150660bc677d507e))
-
+- **components:** updated states for drawer navigation ([5094b62](https://github.com/cenk1cenk2/react-template/commit/5094b62364ad6cf5d6e513c4150660bc677d507e))
 
 ### Features
 
-* **components:** finish standalone drawer navigation ([3de90f9](https://github.com/cenk1cenk2/react-template/commit/3de90f9e42a0c003e2b8e9ae0f9fe8e818323665))
-* **components:** mostly finished the template ([282986c](https://github.com/cenk1cenk2/react-template/commit/282986c292a77eaadd4476c66d7a14c9eab09fb8))
-* **components:** started header design for layout ([e359716](https://github.com/cenk1cenk2/react-template/commit/e359716d0deaff2c1440e3d96591d9013a38dd0a))
+- **components:** finish standalone drawer navigation ([3de90f9](https://github.com/cenk1cenk2/react-template/commit/3de90f9e42a0c003e2b8e9ae0f9fe8e818323665))
+- **components:** mostly finished the template ([282986c](https://github.com/cenk1cenk2/react-template/commit/282986c292a77eaadd4476c66d7a14c9eab09fb8))
+- **components:** started header design for layout ([e359716](https://github.com/cenk1cenk2/react-template/commit/e359716d0deaff2c1440e3d96591d9013a38dd0a))
 
 ## @cenk1cenk2/react-template-components [1.0.9](https://github.com/cenk1cenk2/react-template/compare/@cenk1cenk2/react-template-components@1.0.8...@cenk1cenk2/react-template-components@1.0.9) (2020-11-07)
 
