@@ -9,11 +9,14 @@ module.exports = (config, workspace) => {
   process.env.NODE_CONFIG_DIR = path.join(options.cwd, 'config')
 
   return merge(config, {
-    devtool: 'source-map',
+    devtool: 'eval-source-map',
     stats: 'minimal',
+    devServer: {
+      hot: true
+    },
     output: {
       filename: '[name].[hash:8].js',
-      sourceMapFilename: '[name].[hash:8].map',
+      sourceMapFilename: '[name].[hash:8].js.map',
       chunkFilename: '[id].[hash:8].js'
     },
     module: {

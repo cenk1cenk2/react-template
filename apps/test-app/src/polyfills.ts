@@ -6,4 +6,4 @@
 import 'core-js/stable'
 import 'regenerator-runtime/runtime'
 import 'roboto-fontface'
-import 'fontsource-raleway'
+import 'fontsource-varela'

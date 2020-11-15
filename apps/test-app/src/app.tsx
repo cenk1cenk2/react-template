@@ -9,6 +9,7 @@ import React from 'react'
 import { Route, Router, Switch } from 'react-router-dom'
 import { ThemeProvider as StyledThemeProvider } from 'styled-components'
 
+import { Dashboard } from './pages/dashboard'
 import { FrontendTemplate } from './pages/frontend'
 
 const App: React.FC = () => {
@@ -25,6 +26,8 @@ const App: React.FC = () => {
           <Router history={history}>
             <Switch>
               <Route path="/frontend" component={FrontendTemplate} />
+              <Route path="/frontend-header" component={Dashboard} />
+              <Route path="/dashboard" component={Dashboard} />
             </Switch>
           </Router>
         </StyledThemeProvider>

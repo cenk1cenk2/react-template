@@ -1,5 +1,5 @@
-import { Container, MaxWidths, BottomLogo, BottomLogoProps } from '@cenk1cenk2/react-template-components'
-import { Box as BaseBox, Grid } from '@material-ui/core'
+import { MaxWidths, BottomLogo, BottomLogoProps } from '@cenk1cenk2/react-template-components'
+import { Box as BaseBox, Grid, Container } from '@material-ui/core'
 import React, { Fragment } from 'react'
 import styled, { css } from 'styled-components'
 
@@ -9,10 +9,10 @@ interface StyledGridProps {
 
 const StyledGrid = styled(Grid)<StyledGridProps>(
   ({ theme, $offset }) => css`
-    position: absolute;
+    position: relative;
     top: 0px;
 
-    ${theme.breakpoints.up('sm')} {
+    ${theme.breakpoints.up('md')} {
       top: ${50 - ($offset?.y ?? 0)}%;
       transform: translateY(${-50 + ($offset?.y ?? 0)}%) translateX(${0 + ($offset?.x ?? 0)}%);
     }
@@ -36,7 +36,7 @@ export const Pulldown: React.FC<PulldownProps> = (props) => {
   return (
     <Fragment>
       <StyledGrid container direction="column" $offset={props.offset}>
-        <Container maxWidth={props?.maxWidth ?? 'md'}>
+        <Container maxWidth={props?.maxWidth ?? 'md'} disableGutters={true}>
           <Box boxShadow={5}>{props?.children}</Box>
           <BottomLogo logo={props.logo} package={props.package} />
         </Container>

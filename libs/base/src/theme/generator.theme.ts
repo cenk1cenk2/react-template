@@ -14,41 +14,49 @@ export const generateTheme = (options: { palette: AvailablePalettes, design: Ava
       breakpoints: {
         values: {
           xs: 0,
-          sm: 720,
+          sm: 600,
           md: 940,
-          lg: 1200,
-          xl: 1980
+          lg: 1080,
+          xl: 1440
         }
       },
       typography: {
         fontFamily: [ 'Varela' ].join(','),
         h1: {
           fontFace: 'Roboto',
-          fontWeight: 'bold',
-          fontSize: '4rem'
+          fontWeight: 700,
+          fontSize: '2.25rem'
         },
         h2: {
           fontFace: 'Roboto',
-          fontWeight: 'bold',
-          fontSize: '3rem'
+          fontWeight: 600,
+          fontSize: '1.75rem'
         },
         h3: {
           fontFace: 'Roboto',
-          fontWeight: 'bold',
-          fontSize: '2rem'
+          fontWeight: 600,
+          fontSize: '1.4rem'
         },
         h4: {
+          fontWeight: 400,
           fontSize: '1.2rem'
         },
         h5: {
+          fontWeight: 400,
           fontSize: '1rem'
         },
         h6: {
-          fontSize: '0.875rem',
+          fontSize: '0.925rem',
+          fontWeight: 400,
           color: palette.grey[600]
         }
       },
       overrides: {
+        MuiToolbar: {
+          regular: {
+            background: 'transperent'
+          }
+        },
         MuiTableCell: {
           root: {
             padding: 12,
@@ -79,11 +87,11 @@ export const generateTheme = (options: { palette: AvailablePalettes, design: Ava
           minHeight: design.header.headerSizeMin,
           background: palette.background.paper
         }
+      },
+      shape: {
+        borderRadius: 0
       }
     }),
-    shape: {
-      borderRadius: 0
-    },
     design
   }
 }

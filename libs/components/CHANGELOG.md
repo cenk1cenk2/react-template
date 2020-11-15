@@ -1,17 +1,15 @@
 ## @cenk1cenk2/react-template-components [1.0.9](https://github.com/cenk1cenk2/react-template/compare/@cenk1cenk2/react-template-components@1.0.8...@cenk1cenk2/react-template-components@1.0.9) (2020-11-07)
 
-
 ### Bug Fixes
 
-* **progress-bar:** fix debug setup going to prod ([c117bc6](https://github.com/cenk1cenk2/react-template/commit/c117bc6693d24a50a2b42b056bd54ec30e87f52d))
+- **progress-bar:** fix debug setup going to prod ([c117bc6](https://github.com/cenk1cenk2/react-template/commit/c117bc6693d24a50a2b42b056bd54ec30e87f52d))
 
 ## @cenk1cenk2/react-template-components [1.0.8](https://github.com/cenk1cenk2/react-template/compare/@cenk1cenk2/react-template-components@1.0.7...@cenk1cenk2/react-template-components@1.0.8) (2020-11-07)
 
-
 ### Bug Fixes
 
-* fix linting ([85125c9](https://github.com/cenk1cenk2/react-template/commit/85125c92b2f9acbd0d995c9e7d6cdef25b569d2f))
-* fix page loader and some theming ([bac903a](https://github.com/cenk1cenk2/react-template/commit/bac903acdc5d32ed158045ef4b0911b08ee59f30))
+- fix linting ([85125c9](https://github.com/cenk1cenk2/react-template/commit/85125c92b2f9acbd0d995c9e7d6cdef25b569d2f))
+- fix page loader and some theming ([bac903a](https://github.com/cenk1cenk2/react-template/commit/bac903acdc5d32ed158045ef4b0911b08ee59f30))
 
 ## @cenk1cenk2/react-template-components [1.0.7](https://github.com/cenk1cenk2/react-template/compare/@cenk1cenk2/react-template-components@1.0.6...@cenk1cenk2/react-template-components@1.0.7) (2020-11-06)
 

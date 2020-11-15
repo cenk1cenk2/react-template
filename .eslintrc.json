@@ -2,6 +2,7 @@
   "root": true,
   "extends": ["@cenk1cenk2/eslint-config/index", "@cenk1cenk2/eslint-config/typescript"],
   "rules": {
-    "no-undef": 0
+    "no-undef": 0,
+    "no-console": 0
   }
 }
