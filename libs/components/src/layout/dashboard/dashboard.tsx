@@ -1,5 +1,5 @@
 import { BaseConfig } from '@cenk1cenk2/react-template-base'
-import { CastEvent, MaxWidths } from '@cenk1cenk2/react-template-components'
+import { CastEvent, MaxWidths, ScrollUpButton } from '@cenk1cenk2/react-template-components'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Button, Grid, Hidden } from '@material-ui/core'
@@ -185,6 +185,7 @@ export const DashboardTemplate: React.FC<DashboardTemplateProps> = (props) => {
       <Header {...propsHeader} maxWidth={props.maxWidth} extendLeft={ExtendHeaderLeft} extendRight={ExtendHeaderRight} packageName={props.package?.name} />
       <DrawerNavigation {...props.navigation.drawer} items={props.navigation.items} packageVersion={props.package?.version} />
       {dashboardLoaded && <Main className={clsx({ [navState?.state]: navState?.state && navType === DashboardTemplateNavTypes.MENU })}>{props.children}</Main>}
+      <ScrollUpButton />
     </Fragment>
   )
 }
