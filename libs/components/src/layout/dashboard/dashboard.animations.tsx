@@ -5,10 +5,10 @@ export enum BackendLayoutAnimations {
   DRAWER_COLLAPSE
 }
 
-export function backendLayoutAnimations (type: BackendLayoutAnimations, property) {
+export function backendLayoutAnimations (type: BackendLayoutAnimations, property: string) {
   return {
     [BackendLayoutAnimations.HEADER_TRANSPARENCY]: css`
-      transition: ${property} 0.5s ease-in-out;
+      transition: ${property} 1.5s ease-in-out;
     `,
     [BackendLayoutAnimations.DRAWER_COLLAPSE]: css`
       transition: ${property} 0.4s ease-in-out;

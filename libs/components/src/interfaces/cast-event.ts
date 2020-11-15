@@ -1,1 +1,1 @@
-export type CastEvent<T> = Event & { target: T }
+export type CastEvent<T> = Event & { currentTarget: T }

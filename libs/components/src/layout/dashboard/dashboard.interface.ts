@@ -1,20 +1,5 @@
-/* eslint-disable no-undef */
-
-import { MaxWidths } from '../../interfaces/max-width.interface'
-
-export interface DashboardTemplateProps {
-  maxWidth?: MaxWidths
-  header?: {
-    transperent?: boolean
-  }
-  navigation?: {
-    collapsable?: boolean
-    type?: DashboardTemplateNavTypes
-  }
-  items?: DashboardTemplateNavItems[]
-}
-
 export interface DashboardTemplateNavItems {
+  // eslint-disable-next-line no-undef
   icon?: JSX.Element
   name?: string
   url?: string
