@@ -2,29 +2,28 @@ import { atom, selector } from 'recoil'
 
 import { DashboardTemplateActions, DashboardTemplateNavStates, DashboardTemplateNavTypes } from './dashboard-template.interface'
 
-export const DashboardTemplateNavTypeStore = atom<DashboardTemplateNavTypes>({
+export const NavTypeStore = atom<DashboardTemplateNavTypes>({
   key: 'dashboardTemplateNavType',
   default: DashboardTemplateNavTypes.MENU
 })
 
-interface DashboardTemplateNavStatesStoreInterface {
+interface NavStatesStoreType {
   state: DashboardTemplateNavStates
   mouse?: boolean
 }
 
-export const DashboardTemplateNavStatesStore = atom<DashboardTemplateNavStatesStoreInterface>({
+export const NavStatesStore = atom<NavStatesStoreType>({
   key: 'dashboardTemplateNavState',
   default: { state: DashboardTemplateNavStates.OPEN, mouse: false }
 })
 
-export const DashboardTemplateNavStatesReducer = selector<DashboardTemplateNavStatesStoreInterface, DashboardTemplateActions>({
+export const NavStatesReducer = selector<NavStatesStoreType, DashboardTemplateActions>({
   key: 'dashboardTemplateNavStateSelector',
   get: ({ get }) => {
-    return get(DashboardTemplateNavStatesStore)
+    return get(NavStatesStore)
   },
   set: ({ set }, action) => {
-    set(DashboardTemplateNavStatesStore, (prev) => {
-      console.log(action, prev)
+    set(NavStatesStore, (prev) => {
       if (action === DashboardTemplateActions['navigation:close']) {
         return { state: DashboardTemplateNavStates.CLOSE }
       } else if (action === DashboardTemplateActions['navigation:open']) {

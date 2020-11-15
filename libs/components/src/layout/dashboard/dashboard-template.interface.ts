@@ -1,4 +1,4 @@
-import { IconDefinition } from '@fortawesome/fontawesome-svg-core'
+/* eslint-disable no-undef */
 
 import { MaxWidths } from '../../interfaces/max-width.interface'
 
@@ -15,7 +15,7 @@ export interface DashboardTemplateProps {
 }
 
 export interface DashboardTemplateNavItems {
-  icon?: IconDefinition
+  icon?: JSX.Element
   name?: string
   url?: string
 }

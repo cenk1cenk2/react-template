@@ -1,18 +1,21 @@
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { Drawer as BaseDrawer, List, ListItem as BaseListItem, ListItemIcon as BaseListItemIcon, ListItemText as BaseListItemText } from '@material-ui/core'
+import { Drawer as BaseDrawer, List, ListItem as BaseListItem, ListItemIcon as BaseListItemIcon, ListItemText as BaseListItemText, Typography, Grid } from '@material-ui/core'
 import clsx from 'clsx'
 import React, { Fragment, useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
 import { useRecoilValue, useSetRecoilState, useRecoilState } from 'recoil'
 import styled, { css } from 'styled-components'
 import { useDebounce, useDebouncedCallback } from 'use-debounce'
 
 import { backendLayoutAnimations, BackendLayoutAnimations } from './animations'
-import { DashboardTemplateActions, DashboardTemplateNavTypes, DashboardTemplateNavStates } from './dashboard-template.interface'
-import { DashboardTemplateNavStatesStore, DashboardTemplateNavTypeStore, DashboardTemplateNavStatesReducer } from './dashboard-template.store'
+import { DashboardTemplateActions, DashboardTemplateNavTypes, DashboardTemplateNavStates, DashboardTemplateNavItems } from './dashboard-template.interface'
+import { NavStatesStore, NavTypeStore, NavStatesReducer } from './dashboard-template.store'
 
 export interface DrawerNavigationProps {
-  items?: any[]
+  items?: DashboardTemplateNavItems[]
   collapsable?: boolean
+  version?: string
 }
 
 export const DrawerNavigation: React.FC<DrawerNavigationProps> = (props) => {
@@ -22,7 +25,7 @@ export const DrawerNavigation: React.FC<DrawerNavigationProps> = (props) => {
     ...props
   }
 
-  const setNavStateReducer = useSetRecoilState(DashboardTemplateNavStatesReducer)
+  const setNavStateReducer = useSetRecoilState(NavStatesReducer)
 
   // handlers
   const handleMouseEnter = useDebouncedCallback(
@@ -42,8 +45,9 @@ export const DrawerNavigation: React.FC<DrawerNavigationProps> = (props) => {
   )
 
   // states
-  const navType = useRecoilValue(DashboardTemplateNavTypeStore)
-  const [ navState, setNavState ] = useRecoilState(DashboardTemplateNavStatesStore)
+  const navType = useRecoilValue(NavTypeStore)
+  const [ navState, setNavState ] = useRecoilState(NavStatesStore)
+  const location = useLocation()
 
   useEffect(() => {
     setNavState(props.collapsable ? { state: DashboardTemplateNavStates.COLLAPSE } : { state: DashboardTemplateNavStates.OPEN })
@@ -60,21 +64,31 @@ export const DrawerNavigation: React.FC<DrawerNavigationProps> = (props) => {
         onMouseEnter={() => handleMouseEnter.callback()}
         onMouseLeave={() => handleMouseLeave.callback()}
       >
-        asd
-        <List>
-          {props.items?.map((item) => {
-            return (
-              <Fragment key={item.url}>
-                <ListItem button>
-                  <ListItemIcon>
-                    <FontAwesomeIcon icon={item.icon} />
-                  </ListItemIcon>
-                  <ListItemText primary={item.name} className="h6" disableTypography />
-                </ListItem>
-              </Fragment>
-            )
-          })}
-        </List>
+        <Grid container direction="column" alignContent="space-between" style={{ height: '100%' }}>
+          <Grid item xs={true} style={{ width: '100%' }}>
+            <List>
+              {props.items?.map((item) => {
+                return (
+                  <Fragment key={item.url}>
+                    <ListItem selected={item.url === location.pathname} button alignItems="center">
+                      <ListItemIcon>{item.icon}</ListItemIcon>
+                      <ListItemText primary={item.name} className={clsx(navState.state)} primaryTypographyProps={{ variant: 'h3' }} />
+                    </ListItem>
+                  </Fragment>
+                )
+              })}
+            </List>
+          </Grid>
+          <Grid item style={{ width: '100%' }}>
+            {props.version && (
+              <VersionField>
+                <Typography variant="h6" align="center">
+                  <small>v{props.version}</small>
+                </Typography>
+              </VersionField>
+            )}
+          </Grid>
+        </Grid>
       </Menu>
     </Fragment>
   )
@@ -82,9 +96,15 @@ export const DrawerNavigation: React.FC<DrawerNavigationProps> = (props) => {
 
 const ListItem = styled(BaseListItem)(
   ({ theme }) => css`
+    margin: auto;
+    height: calc(${theme.typography.h3.fontSize} * 2);
     :hover {
       .MuiListItemIcon-root {
-        color: ${theme.palette.text.primary};
+        color: ${theme.palette.text.primary} !important;
+      }
+
+      .MuiListItemText-root {
+        color: ${theme.palette.text.primary} !important;
       }
     }
   `
@@ -92,20 +112,34 @@ const ListItem = styled(BaseListItem)(
 
 const ListItemIcon = styled(BaseListItemIcon)(
   ({ theme }) => css`
-    min-width: calc(${theme.design.navigation.collapseWidth} - ${theme.spacing(2)}px + 1px);
-    padding-left: calc(${theme.spacing(1)}px / 2);
-    font-size: calc((${theme.design.navigation.collapseWidth} - ${theme.spacing(4)}px) / 1.5);
+    min-width: ${theme.design.navigation.collapseWidth - theme.spacing(3)}px;
+    padding-left: ${theme.spacing(1)}px;
+    font-size: ${theme.typography.h4.fontSize};
     color: ${theme.palette.text.secondary};
   `
 )
 
-const ListItemText = styled(BaseListItemText)(({ theme }) => css``)
+const ListItemText = styled(BaseListItemText)(
+  ({ theme }) => css`
+  opacity: 1;
+  color: ${theme.palette.text.secondary};
+  ${backendLayoutAnimations(BackendLayoutAnimations.DRAWER_COLLAPSE, 'opacity')}
+
+  .collapse& {
+    opacity: 0;
+  }
+
+  .close& {
+    opacity: 0
+`
+)
 
 const Menu = styled(BaseDrawer)(
   ({ theme }) => css`
     .MuiPaper-root {
       width: 0;
       top: ${theme.design.header.headerSizeMin}px;
+      height: calc(100% - ${theme.design.header.headerSizeMin}px);
       padding-top: ${theme.spacing(1)}px;
       white-space: nowrap;
       overflow: hidden;
@@ -135,5 +169,12 @@ const Menu = styled(BaseDrawer)(
     .MuiDrawer-paperAnchorDockedRight {
       border-left: 0;
     }
+  `
+)
+
+const VersionField = styled.div(
+  ({ theme }) => css`
+    padding-bottom: ${theme.spacing(2)}px;
+    padding-top: ${theme.spacing(2)}px;
   `
 )

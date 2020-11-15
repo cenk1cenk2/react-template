@@ -8,8 +8,8 @@ export const FrontendWithHeaderTemplate: React.FC = () => {
   return (
     <Fragment>
       <RecoilRoot>
-        <Header logo={LogoImage} package={pkg} />
-        <DrawerNavigation />
+        <Header logo={LogoImage} package={pkg} headerPosition="static" />
+        <DrawerNavigation version={pkg.version} />
         {/* <BackgroundImageContainer $url={BackgroundImage}> */}
         <Pulldown package={pkg} logo={LogoImage} maxWidth="md" offset={{ x: 0, y: 0 }}>
           some data

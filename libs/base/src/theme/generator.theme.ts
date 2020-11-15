@@ -24,27 +24,30 @@ export const generateTheme = (options: { palette: AvailablePalettes, design: Ava
         fontFamily: [ 'Varela' ].join(','),
         h1: {
           fontFace: 'Roboto',
-          fontWeight: 900,
-          fontSize: '2.5rem'
+          fontWeight: 700,
+          fontSize: '2.25rem'
         },
         h2: {
           fontFace: 'Roboto',
-          fontWeight: 700,
-          fontSize: '2rem'
+          fontWeight: 600,
+          fontSize: '1.75rem'
         },
         h3: {
           fontFace: 'Roboto',
-          fontWeight: 700,
-          fontSize: '1.5rem'
+          fontWeight: 600,
+          fontSize: '1.4rem'
         },
         h4: {
+          fontWeight: 400,
           fontSize: '1.2rem'
         },
         h5: {
+          fontWeight: 400,
           fontSize: '1rem'
         },
         h6: {
-          fontSize: '0.875rem',
+          fontSize: '0.925rem',
+          fontWeight: 400,
           color: palette.grey[600]
         }
       },

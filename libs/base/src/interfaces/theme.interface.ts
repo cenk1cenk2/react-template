@@ -9,7 +9,7 @@ export interface Theme extends BaseTheme {
     }
     navigation: {
       width: CSS.Property.Width<number>
-      collapseWidth: CSS.Property.Width<number>
+      collapseWidth: number
     }
   }
 }

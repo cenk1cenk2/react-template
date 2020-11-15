@@ -67,7 +67,7 @@ export const DarkPalette: Theme['palette'] = {
   },
   text: {
     primary: '#EFEFEF',
-    secondary: '#F0F0F0',
+    secondary: '#A2A2A2',
     disabled: '#CCCCCC',
     hint: 'rgba(239, 239, 239, 0.38)'
   },
