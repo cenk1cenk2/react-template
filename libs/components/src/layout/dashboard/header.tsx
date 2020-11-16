@@ -1,5 +1,4 @@
 import { BaseConfig } from '@cenk1cenk2/react-template-base'
-import { CastEvent } from '@cenk1cenk2/react-template-components'
 import { AppBar as BaseAppBar, AppBarProps, Container, Grid, Toolbar as BaseToolbar, Typography } from '@material-ui/core'
 import React, { Fragment, SVGProps, useCallback, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
@@ -39,25 +38,20 @@ export const Header: React.FC<HeaderProps> = (props) => {
 
   // listeners
   const handleScroll = useDebouncedCallback(
-    (e: CastEvent<Window>) => {
-      if (e.currentTarget?.scrollY) {
-        if (e.currentTarget?.scrollY < theme.design.header.headerSizeMin / 2) {
-          setSolidHeader(true)
-        } else {
-          setSolidHeader(false)
-        }
+    () => {
+      if (window?.pageYOffset < theme.design.header.headerSizeMin / 2) {
+        setSolidHeader(false)
+      } else {
+        setSolidHeader(true)
       }
     },
     100,
     { leading: true }
   )
 
-  const handleInit = useCallback(
-    (e: CastEvent<Window>) => {
-      handleScroll.callback(e)
-    },
-    [ handleScroll ]
-  )
+  const handleInit = useCallback(() => {
+    handleScroll.callback()
+  }, [ handleScroll ])
 
   useEffect(() => {
     window.addEventListener('load', handleInit)
@@ -139,16 +133,18 @@ const LogoField = styled.div(
 
 const Title = styled.div(
   () => css`
-    font-weight: 700;
-    line-height: 0;
+    .MuiTypography-root {
+      font-weight: 700;
+      line-height: 0;
+    }
   `
 )
 
 const Logo = styled.div(
   ({ theme }) => css`
-    width: ${theme.typography.h1.fontSize};
-    padding: ${theme.spacing(1) / 2}px;
+    width: ${theme.typography.h2.fontSize};
+    // padding: ${theme.spacing(1) / 2}px;
     margin-top: ${theme.spacing(1)}px;
-    margin-right: ${theme.spacing(1) / 2}px;
+    margin-right: ${theme.spacing(2)}px;
   `
 )

@@ -21,32 +21,33 @@ export const generateTheme = (options: { palette: AvailablePalettes, design: Ava
         }
       },
       typography: {
+        htmlFontSize: 16,
         fontFamily: [ 'Varela' ].join(','),
         h1: {
           fontFace: 'Roboto',
           fontWeight: 700,
-          fontSize: '2.25rem'
+          fontSize: '3rem'
         },
         h2: {
           fontFace: 'Roboto',
           fontWeight: 600,
-          fontSize: '1.75rem'
+          fontSize: '2rem'
         },
         h3: {
           fontFace: 'Roboto',
           fontWeight: 600,
-          fontSize: '1.4rem'
+          fontSize: '1.5rem'
         },
         h4: {
           fontWeight: 400,
-          fontSize: '1.2rem'
+          fontSize: '1.25rem'
         },
         h5: {
           fontWeight: 400,
           fontSize: '1rem'
         },
         h6: {
-          fontSize: '0.925rem',
+          fontSize: '1rem',
           fontWeight: 400,
           color: palette.grey[600]
         }

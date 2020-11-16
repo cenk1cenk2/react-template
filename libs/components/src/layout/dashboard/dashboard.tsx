@@ -1,5 +1,5 @@
 import { BaseConfig } from '@cenk1cenk2/react-template-base'
-import { CastEvent, MaxWidths, ScrollUpButton } from '@cenk1cenk2/react-template-components'
+import { MaxWidths, ScrollUpButton } from '@cenk1cenk2/react-template-components'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Button, Grid, Hidden } from '@material-ui/core'
@@ -46,8 +46,8 @@ export const DashboardTemplate: React.FC<DashboardTemplateProps> = (props) => {
 
   // handlers
   const handleResize = useDebouncedCallback(
-    (e: CastEvent<Window>) => {
-      if (e.currentTarget?.innerWidth < theme.breakpoints.values.md) {
+    () => {
+      if (window?.innerWidth < theme.breakpoints.values.md) {
         console.info('Screen is not large enough, will use drawer style navigation.')
 
         // set navigation type to menu type for smaller screens
@@ -82,12 +82,9 @@ export const DashboardTemplate: React.FC<DashboardTemplateProps> = (props) => {
     { leading: true }
   )
 
-  const handleInit = useCallback(
-    (e: CastEvent<Window>) => {
-      handleResize.callback(e)
-    },
-    [ handleResize ]
-  )
+  const handleInit = useCallback(() => {
+    handleResize.callback()
+  }, [ handleResize ])
 
   useEffect(() => {
     // handlers
