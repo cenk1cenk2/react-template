@@ -48,21 +48,24 @@ const Tabs = styled(BaseTabs)(
   ({ theme }) => css`
     .MuiTab-root {
       line-height: ${theme.typography.h2.fontSize};
+      height: ${theme.design.header.headerSizeMin}px;
     }
 
     .MuiTab-labelIcon {
-      min-height: 30px;
+      min-height: 0px;
       padding-top: 0;
 
       .MuiTab-wrapper {
         svg {
-          font-size: ${theme.typography.h4.fontSize} !important;
+          font-size: ${theme.typography.h6.fontSize} !important;
         }
 
         font-family: ${theme.typography.h1.fontFamily};
         font-size: ${theme.typography.h4.fontSize};
+        font-weight: 700;
 
         > *:first-child {
+          margin-top: ${theme.spacing(1)}px;
           margin-bottom: 0;
         }
       }

@@ -40,9 +40,9 @@ export const Header: React.FC<HeaderProps> = (props) => {
   const handleScroll = useDebouncedCallback(
     () => {
       if (window?.pageYOffset < theme.design.header.headerSizeMin / 2) {
-        setSolidHeader(true)
-      } else {
         setSolidHeader(false)
+      } else {
+        setSolidHeader(true)
       }
     },
     100,
@@ -133,16 +133,18 @@ const LogoField = styled.div(
 
 const Title = styled.div(
   () => css`
-    font-weight: 700;
-    line-height: 0;
+    .MuiTypography-root {
+      font-weight: 700;
+      line-height: 0;
+    }
   `
 )
 
 const Logo = styled.div(
   ({ theme }) => css`
-    width: ${theme.typography.h1.fontSize};
-    padding: ${theme.spacing(1) / 2}px;
+    width: ${theme.typography.h2.fontSize};
+    // padding: ${theme.spacing(1) / 2}px;
     margin-top: ${theme.spacing(1)}px;
-    margin-right: ${theme.spacing(1) / 2}px;
+    margin-right: ${theme.spacing(2)}px;
   `
 )
