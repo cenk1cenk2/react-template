@@ -1,3 +1,11 @@
+## @cenk1cenk2/react-template-base [1.1.1](https://github.com/cenk1cenk2/react-template/compare/@cenk1cenk2/react-template-base@1.1.0...@cenk1cenk2/react-template-base@1.1.1) (2020-11-16)
+
+
+### Bug Fixes
+
+* changed typography a bit ([208e54f](https://github.com/cenk1cenk2/react-template/commit/208e54fb760697fa0cf2a32e68e8cf791485a474))
+* fix rollup config and window properties with forwardref ([3939935](https://github.com/cenk1cenk2/react-template/commit/39399354911d2d72bdaa634e3e6016bdf0c9935e))
+
 # @cenk1cenk2/react-template-base [1.1.0](https://github.com/cenk1cenk2/react-template/compare/@cenk1cenk2/react-template-base@1.0.5...@cenk1cenk2/react-template-base@1.1.0) (2020-11-15)
 
 ### Bug Fixes
