@@ -12,7 +12,7 @@ module.exports = {
     [
       '@semantic-release/exec',
       {
-        verifyReleaseCmd: 'cd ../../ && yarn build:one base --with-deps',
+        prepareCmd: 'cd ../../ && yarn build:one base --with-deps',
         failCmd: 'echo "Building failed." && exit 127'
       }
     ],
