@@ -23,7 +23,7 @@ export const generateTheme = (options: { palette: AvailablePalettes, design: Ava
       typography: {
         fontSize: 16,
         // htmlFontSize: 16,
-        fontFamily: [ 'Varela', 'Roboto' ].join(','),
+        fontFamily: [ 'Frank Ruhl Libre', 'Roboto' ].join(','),
         h1: {
           fontFamily: 'Roboto',
           fontWeight: 700,
