@@ -1,6 +1,18 @@
 # @cenk1cenk2/react-template-components [1.3.0](https://github.com/cenk1cenk2/react-template/compare/@cenk1cenk2/react-template-components@1.2.0...@cenk1cenk2/react-template-components@1.3.0) (2020-11-17)
 
 
+### Bug Fixes
+
+* remove ununsed import ([fc5385f](https://github.com/cenk1cenk2/react-template/commit/fc5385f96c29b609f6bc5abde8e1db45a118414d))
+
+
+### Features
+
+* expanded the theme a bit ([f8430e2](https://github.com/cenk1cenk2/react-template/commit/f8430e25cdd1cc8a29cb72cccc8e984c5d6fb34b))
+
+# @cenk1cenk2/react-template-components [1.3.0](https://github.com/cenk1cenk2/react-template/compare/@cenk1cenk2/react-template-components@1.2.0...@cenk1cenk2/react-template-components@1.3.0) (2020-11-17)
+
+
 ### Features
 
 * expanded the theme a bit ([f8430e2](https://github.com/cenk1cenk2/react-template/commit/f8430e25cdd1cc8a29cb72cccc8e984c5d6fb34b))
