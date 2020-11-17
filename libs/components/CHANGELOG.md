@@ -1,3 +1,10 @@
+## @cenk1cenk2/react-template-components [1.3.1](https://github.com/cenk1cenk2/react-template/compare/@cenk1cenk2/react-template-components@1.3.0...@cenk1cenk2/react-template-components@1.3.1) (2020-11-17)
+
+
+### Bug Fixes
+
+* fixed the bottom logo component ([078a42d](https://github.com/cenk1cenk2/react-template/commit/078a42de335299b34bd48bde1ae9df0bce300393))
+
 # @cenk1cenk2/react-template-components [1.3.0](https://github.com/cenk1cenk2/react-template/compare/@cenk1cenk2/react-template-components@1.2.0...@cenk1cenk2/react-template-components@1.3.0) (2020-11-17)
 
 
