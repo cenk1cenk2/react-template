@@ -1,3 +1,3 @@
 module.exports = {
-  '*': (files) => ['yarn affected:lint']
+  '*': (files) => ['yarn affected:lint --parallel']
 }

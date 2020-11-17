@@ -1,5 +1,5 @@
 import { BaseConfig } from '@cenk1cenk2/react-template-base'
-import { AppBar as BaseAppBar, AppBarProps, Container, Grid, Toolbar as BaseToolbar, Typography } from '@material-ui/core'
+import { AppBar as BaseAppBar, AppBarProps, Container, Grid, Toolbar as BaseToolbar } from '@material-ui/core'
 import React, { Fragment, SVGProps, useCallback, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useRecoilValue } from 'recoil'
