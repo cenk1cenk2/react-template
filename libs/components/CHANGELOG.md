@@ -1,3 +1,10 @@
+# @cenk1cenk2/react-template-components [1.4.0](https://github.com/cenk1cenk2/react-template/compare/@cenk1cenk2/react-template-components@1.3.1...@cenk1cenk2/react-template-components@1.4.0) (2020-11-17)
+
+
+### Features
+
+* change for qiwi ([6473f19](https://github.com/cenk1cenk2/react-template/commit/6473f19b320d8b0a9317478ff3cb8c224d93cf00))
+
 ## @cenk1cenk2/react-template-components [1.3.1](https://github.com/cenk1cenk2/react-template/compare/@cenk1cenk2/react-template-components@1.3.0...@cenk1cenk2/react-template-components@1.3.1) (2020-11-17)
 
 
