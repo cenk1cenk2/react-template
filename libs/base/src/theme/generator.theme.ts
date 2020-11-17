@@ -15,41 +15,49 @@ export const generateTheme = (options: { palette: AvailablePalettes, design: Ava
         values: {
           xs: 0,
           sm: 600,
-          md: 940,
-          lg: 1080,
-          xl: 1440
+          md: 960,
+          lg: 1280,
+          xl: 1920
         }
       },
       typography: {
-        htmlFontSize: 16,
-        fontFamily: [ 'Varela' ].join(','),
+        fontSize: 16,
+        // htmlFontSize: 16,
+        fontFamily: [ 'Varela', 'Roboto' ].join(','),
         h1: {
-          fontFace: 'Roboto',
+          fontFamily: 'Roboto',
           fontWeight: 700,
-          fontSize: '3rem'
+          fontSize: '3.5rem'
         },
         h2: {
-          fontFace: 'Roboto',
-          fontWeight: 600,
-          fontSize: '2rem'
+          fontFamily: 'Roboto',
+          fontWeight: 700,
+          fontSize: '2.75rem'
         },
         h3: {
-          fontFace: 'Roboto',
-          fontWeight: 600,
-          fontSize: '1.5rem'
+          fontFamily: 'Roboto',
+          fontWeight: 700,
+          fontSize: '2.225rem'
         },
         h4: {
-          fontWeight: 400,
-          fontSize: '1.25rem'
+          fontFamily: 'Roboto',
+          fontWeight: 500,
+          fontSize: '2rem'
         },
         h5: {
-          fontWeight: 400,
-          fontSize: '1rem'
+          fontWeight: 500,
+          fontSize: '1.75rem'
         },
         h6: {
-          fontSize: '1rem',
-          fontWeight: 400,
-          color: palette.grey[600]
+          fontSize: '1.5rem',
+          fontWeight: 500
+        },
+        subtitle1: {
+          fontSize: '1.35rem'
+        },
+        subtitle2: {
+          fontSize: '1.25rem',
+          fontWeight: 500
         }
       },
       overrides: {

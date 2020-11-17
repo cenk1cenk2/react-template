@@ -11,6 +11,7 @@ import { ThemeProvider as StyledThemeProvider } from 'styled-components'
 
 import { Dashboard } from './pages/dashboard'
 import { FrontendTemplate } from './pages/frontend'
+import { TypographyPage } from './pages/typography'
 
 const App: React.FC = () => {
   const history = createBrowserHistory()
@@ -28,6 +29,7 @@ const App: React.FC = () => {
               <Route path="/frontend" component={FrontendTemplate} />
               <Route path="/frontend-header" component={Dashboard} />
               <Route path="/dashboard" component={Dashboard} />
+              <Route path="/typography" component={TypographyPage} />
             </Switch>
           </Router>
         </StyledThemeProvider>
