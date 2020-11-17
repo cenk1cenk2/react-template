@@ -15,9 +15,9 @@ export const Dashboard: React.FC = () => {
           package={pkg}
           header={{ logo: LogoImage, transperent: false }}
           navigation={{
-            type: DashboardTemplateNavTypes.MENU,
+            type: DashboardTemplateNavTypes.HEADER,
             drawer: {
-              collapsable: true
+              collapsable: false
             },
             items: [
               {

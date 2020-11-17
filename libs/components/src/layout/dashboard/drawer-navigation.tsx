@@ -80,7 +80,7 @@ export const DrawerNavigation: React.FC<DrawerNavigationProps> = (props) => {
                       >
                         <ListItem selected={item.url === location.pathname} button alignItems="center">
                           {item.icon && <ListItemIcon>{item.icon}</ListItemIcon>}
-                          <ListItemText primary={item.name} className={clsx(navState?.state)} primaryTypographyProps={{ variant: 'h3' }} />
+                          <ListItemText primary={item.name} className={clsx(navState?.state)} disableTypography />
                         </ListItem>
                       </Link>
                     </Fragment>
@@ -91,7 +91,7 @@ export const DrawerNavigation: React.FC<DrawerNavigationProps> = (props) => {
             <Grid item style={{ width: '100%' }}>
               {props.packageVersion && (
                 <VersionField className={clsx(navState?.state)}>
-                  <Typography variant="h6" align="center">
+                  <Typography variant="body2" align="center">
                     <small>v{props.packageVersion}</small>
                   </Typography>
                 </VersionField>
@@ -107,7 +107,7 @@ export const DrawerNavigation: React.FC<DrawerNavigationProps> = (props) => {
 const ListItem = styled(BaseListItem)(
   ({ theme }) => css`
     margin: auto;
-    height: calc(${theme.typography.h3.fontSize} * 2);
+    height: ${theme.design.navigation.collapseWidth / 2 + theme.spacing(3)}px;
     :hover {
       .MuiListItemIcon-root {
         color: ${theme.palette.text.primary} !important;
@@ -122,11 +122,10 @@ const ListItem = styled(BaseListItem)(
 
 const ListItemIcon = styled(BaseListItemIcon)(
   ({ theme }) => css`
-    min-width: ${theme.design.navigation.collapseWidth / 2 + 5}px;
+    min-width: ${theme.design.navigation.collapseWidth / 2 + theme.spacing(1)}px;
     align-items: center;
     padding-left: ${theme.spacing(1) / 2}px;
-
-    font-size: ${theme.typography.h3.fontSize};
+    font-size: ${theme.design.navigation.collapseWidth / 2 - theme.spacing(1) / 2}px;
     color: ${theme.palette.text.secondary};
   `
 )
@@ -135,6 +134,12 @@ const ListItemText = styled(BaseListItemText)(
   ({ theme }) => css`
     opacity: 1;
     color: ${theme.palette.text.secondary};
+    font-size: ${theme.design.navigation.collapseWidth / 2 - theme.spacing(1) / 2}px;
+    font-weight: ${theme.typography.h1.fontWeight};
+    font-family: ${theme.typography.h1.fontFamily};
+    line-height: 0;
+    letter-spacing: 0.025em;
+
     ${backendLayoutAnimations(BackendLayoutAnimations.DRAWER_COLLAPSE, 'opacity')}
 
     .collapse& {
@@ -190,9 +195,13 @@ const VersionField = styled.div(
   ({ theme }) => css`
     padding-bottom: ${theme.spacing(2)}px;
     padding-top: ${theme.spacing(2)}px;
-
+    color: ${theme.palette.grey[600]};
     opacity: 1;
     ${backendLayoutAnimations(BackendLayoutAnimations.DRAWER_COLLAPSE, 'opacity')}
+
+    .collapse& {
+      opacity: 0;
+    }
 
     .close& {
       opacity: 0;

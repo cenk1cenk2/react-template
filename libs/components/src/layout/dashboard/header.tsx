@@ -80,9 +80,7 @@ export const Header: React.FC<HeaderProps> = (props) => {
                         <Logo>
                           <props.logo height="100%" width="100%" />
                         </Logo>
-                        <Title>
-                          <Typography variant="h2">{props.packageName}</Typography>
-                        </Title>
+                        <Title>{props.packageName}</Title>
                       </Grid>
                     </Link>
                   </LogoField>
@@ -106,7 +104,7 @@ const AppBar = styled(BaseAppBar)(
 
     .MuiButton-root {
       padding: ${theme.spacing(1)}px;
-      font-size: ${theme.typography.h3.fontSize};
+      font-size: ${theme.design.header.headerSizeMin - theme.spacing(4)}px;
     }
 
     .MuiToolbar-gutters {
@@ -132,17 +130,19 @@ const LogoField = styled.div(
 )
 
 const Title = styled.div(
-  () => css`
-    .MuiTypography-root {
-      font-weight: 700;
-      line-height: 0;
-    }
+  ({ theme }) => css`
+    height: 100%;
+    font-weight: 700;
+    font-size: ${theme.design.header.headerSizeMin - theme.spacing(3)}px;
+    font-family: ${theme.typography.h1.fontFamily};
+    line-height: 0;
   `
 )
 
 const Logo = styled.div(
   ({ theme }) => css`
-    width: ${theme.typography.h2.fontSize};
+    height: 100%;
+    width: ${theme.design.header.headerSizeMin - theme.spacing(2)}px;
     // padding: ${theme.spacing(1) / 2}px;
     margin-top: ${theme.spacing(1)}px;
     margin-right: ${theme.spacing(2)}px;

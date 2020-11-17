@@ -47,7 +47,7 @@ export const TabsNavigation: React.FC<TabsNavigationProps> = (props) => {
 const Tabs = styled(BaseTabs)(
   ({ theme }) => css`
     .MuiTab-root {
-      line-height: ${theme.typography.h2.fontSize};
+      line-height: ${theme.design.header.headerSizeMin / 2 + theme.spacing(1) / 2}px;
       height: ${theme.design.header.headerSizeMin}px;
     }
 
@@ -57,11 +57,11 @@ const Tabs = styled(BaseTabs)(
 
       .MuiTab-wrapper {
         svg {
-          font-size: ${theme.typography.h6.fontSize} !important;
+          font-size: ${theme.design.header.headerSizeMin / 2 - theme.spacing(4)}px !important;
         }
 
         font-family: ${theme.typography.h1.fontFamily};
-        font-size: ${theme.typography.h4.fontSize};
+        font-size: ${theme.design.header.headerSizeMin / 2 - theme.spacing(1)}px;
         font-weight: 700;
 
         > *:first-child {
