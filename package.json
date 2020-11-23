@@ -52,7 +52,7 @@
   },
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
-    "@fortawesome/react-fontawesome": "^0.1.12",
+    "@fortawesome/react-fontawesome": "^0.1.13",
     "clsx": "^1.1.1",
     "config": "^3.3.2",
     "document-register-element": "^1.14.10",
