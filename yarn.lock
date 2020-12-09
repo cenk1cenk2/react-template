@@ -6217,10 +6217,10 @@ follow-redirects@^1.0.0:
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.13.0.tgz#b42e8d93a2a7eea5ed88633676d6597bc8e384db"
   integrity sha512-aq6gF1BEKje4a9i9+5jimNFIpq4Q1WiwBToeRK5NvZBd/TRsmW8BsJfOEGkr76TbOyPVD3OVDN910EcUNtRYEA==
 
-fontsource-frank-ruhl-libre@^3.0.9:
-  version "3.0.9"
-  resolved "https://registry.yarnpkg.com/fontsource-frank-ruhl-libre/-/fontsource-frank-ruhl-libre-3.0.9.tgz#a1904385fdb44765a201e456ecf11bd3b76342ed"
-  integrity sha512-5M4h5NKaqjEjZUYW87cGvg/QhZNnLw3W8/3eXW9bHlwe7gNiGukwF1Bg3g9rjYLjfawBuusHPBI46bTm56zHjA==
+fontsource-frank-ruhl-libre@^3.1.5:
+  version "3.1.5"
+  resolved "https://registry.yarnpkg.com/fontsource-frank-ruhl-libre/-/fontsource-frank-ruhl-libre-3.1.5.tgz#1774fc74f3eca6a152173ae71f68ab711f02ce4d"
+  integrity sha512-y+DU2eI7O9NPC/UfZgJsJhjyqnTs6iovdlF4KkqUlABBrYRo+cKuMrHY0KAyobvH8JLP3DKH3ksP9DlfBUu+Yw==
 
 for-in@^1.0.2:
   version "1.0.2"
