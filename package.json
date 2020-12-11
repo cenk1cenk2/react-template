@@ -65,7 +65,7 @@
     "recoil": "^0.1.2",
     "roboto-fontface": "^0.10.0",
     "styled-components": "^5.2.1",
-    "use-debounce": "^5.1.0"
+    "use-debounce": "^5.2.0"
   },
   "devDependencies": {
     "@babel/core": "7.12.10",
