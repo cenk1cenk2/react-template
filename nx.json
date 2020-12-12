@@ -35,6 +35,12 @@
     },
     "components": {
       "tags": []
+    },
+    "dashboard": {
+      "tags": []
+    },
+    "page-loader": {
+      "tags": []
     }
   }
 }

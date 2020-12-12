@@ -4,9 +4,9 @@ import { useLocation } from 'react-router-dom'
 import { useRecoilValue } from 'recoil'
 import styled, { css } from 'styled-components'
 
-import { MaxWidths } from '../../interfaces'
 import { DashboardTemplateNavItems, DashboardTemplateNavTypes } from './dashboard.interface'
 import { NavTypeStore } from './dashboard.store'
+import { MaxWidths } from '@cenk1cenk2/react-template-components'
 
 export interface TabsNavigationProps {
   threshold?: MaxWidths

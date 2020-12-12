@@ -1,10 +1,10 @@
-import { Theme } from '@cenk1cenk2/react-template-base'
 import nprogress, { NProgress, NProgressOptions } from 'nprogress'
 import React, { Fragment, useEffect, useState } from 'react'
 import ReactDOM from 'react-dom/server'
 import { ThemeProvider as StyledThemeProvider } from 'styled-components'
 
 import { NProgressBar, PageLoader, PageLoaderProps } from './page-loader'
+import { Theme } from '@cenk1cenk2/react-template-base'
 
 export function useProgress (
   props?: {

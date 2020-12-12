@@ -1,7 +1,6 @@
-import { Theme } from '@cenk1cenk2/react-template-base'
-
 import { DefaultDesign } from './design'
 import { DarkPalette } from './palette'
+import { Theme } from '@cenk1cenk2/react-template-base'
 
 export enum AvailablePalettes {
   'DARK'

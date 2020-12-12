@@ -5,7 +5,9 @@
       "@test-app": ["apps/test-app/src/index"],
       "@test-app/assets/*": ["apps/test-app/assets/*"],
       "@cenk1cenk2/react-template-base": ["libs/base/src/index"],
-      "@cenk1cenk2/react-template-components": ["libs/components/src/index"]
+      "@cenk1cenk2/react-template-components": ["libs/components/src/index"],
+      "@cenk1cenk2/react-template-dashboard": ["libs/dashboard/src/index"],
+      "@cenk1cenk2/react-template-page-loader": ["libs/page-loader/src/index"]
     }
   }
 }

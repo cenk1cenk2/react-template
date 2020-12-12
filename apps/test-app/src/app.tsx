@@ -1,5 +1,5 @@
 import { AvailableDesigns, AvailablePalettes, generateTheme, GlobalStyles } from '@cenk1cenk2/react-template-base'
-import { useProgress } from '@cenk1cenk2/react-template-components'
+import { useProgress } from '@cenk1cenk2/react-template-page-loader'
 import { StylesProvider } from '@material-ui/core'
 import CssBaseline from '@material-ui/core/CssBaseline'
 import { ThemeProvider } from '@material-ui/styles'

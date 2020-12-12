@@ -1,5 +1,6 @@
-import { Theme } from '@cenk1cenk2/react-template-base'
 import { createMuiTheme } from '@material-ui/core'
+
+import { Theme } from '@cenk1cenk2/react-template-base'
 
 const DefaultMuiDarkTheme = createMuiTheme({ palette: { type: 'dark' } })
 

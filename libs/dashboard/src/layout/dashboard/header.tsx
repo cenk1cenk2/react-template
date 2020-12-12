@@ -1,4 +1,3 @@
-import { BaseConfig } from '@cenk1cenk2/react-template-base'
 import { AppBar as BaseAppBar, AppBarProps, Container, Grid, Toolbar as BaseToolbar } from '@material-ui/core'
 import React, { Fragment, SVGProps, useCallback, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
@@ -6,10 +5,11 @@ import { useRecoilValue } from 'recoil'
 import styled, { css, useTheme } from 'styled-components'
 import { useDebouncedCallback } from 'use-debounce'
 
-import { MaxWidths } from '../../interfaces'
 import { BackendLayoutAnimations, backendLayoutAnimations } from './dashboard.animations'
 import { DashboardTemplateNavStates } from './dashboard.interface'
 import { NavStatesStore } from './dashboard.store'
+import { BaseConfig } from '@cenk1cenk2/react-template-base'
+import { MaxWidths } from '@cenk1cenk2/react-template-components'
 
 export type HeaderProps = {
   transperent?: boolean

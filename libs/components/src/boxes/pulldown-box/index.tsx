@@ -1,7 +1,8 @@
-import { MaxWidths, BottomLogo, BottomLogoProps } from '@cenk1cenk2/react-template-components'
 import { Box as BaseBox, Grid, Container } from '@material-ui/core'
 import React, { Fragment } from 'react'
 import styled, { css } from 'styled-components'
+
+import { MaxWidths, BottomLogo, BottomLogoProps } from '@cenk1cenk2/react-template-components'
 
 interface StyledGridProps {
   $offset?: { x?: number, y?: number }

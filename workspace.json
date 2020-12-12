@@ -172,6 +172,92 @@
           }
         }
       }
+    },
+    "dashboard": {
+      "root": "libs/dashboard",
+      "sourceRoot": "libs/dashboard/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "build": {
+          "builder": "@nrwl/web:package",
+          "options": {
+            "outputPath": "dist/react-template-dashboard",
+            "tsConfig": "libs/dashboard/tsconfig.build.json",
+            "project": "libs/dashboard/package.json",
+            "entryFile": "libs/dashboard/src/index.ts",
+            "externals": ["react", "react-dom", "react-dom/server", "react-is", "prop-types", "stream"],
+            "babelConfig": "@nrwl/react/plugins/bundle-babel",
+            "rollupConfig": "rollup.config.js",
+            "globals": [
+              {
+                "moduleId": "@material-ui/core",
+                "global": "@material-ui/core"
+              },
+              {
+                "moduleId": "styled-components",
+                "global": "styled-components"
+              }
+            ],
+            "assets": [
+              {
+                "glob": "README.md",
+                "input": "libs/dashboard/",
+                "output": "."
+              }
+            ]
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/dashboard/**/*.{ts,tsx,js,jsx}"]
+          }
+        }
+      }
+    },
+    "page-loader": {
+      "root": "libs/page-loader",
+      "sourceRoot": "libs/page-loader/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "build": {
+          "builder": "@nrwl/web:package",
+          "options": {
+            "outputPath": "dist/react-template-page-loader",
+            "tsConfig": "libs/page-loader/tsconfig.build.json",
+            "project": "libs/page-loader/package.json",
+            "entryFile": "libs/page-loader/src/index.ts",
+            "externals": ["react", "react-dom", "react-dom/server", "react-is", "prop-types", "stream"],
+            "babelConfig": "@nrwl/react/plugins/bundle-babel",
+            "rollupConfig": "rollup.config.js",
+            "globals": [
+              {
+                "moduleId": "@material-ui/core",
+                "global": "@material-ui/core"
+              },
+              {
+                "moduleId": "styled-components",
+                "global": "styled-components"
+              }
+            ],
+            "assets": [
+              {
+                "glob": "README.md",
+                "input": "libs/page-loader/",
+                "output": "."
+              }
+            ]
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/page-loader/**/*.{ts,tsx,js,jsx}"]
+          }
+        }
+      }
     }
   },
   "cli": {

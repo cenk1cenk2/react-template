@@ -42,6 +42,6 @@ steps:
         - rc
       event:
         - push
-        
+
 image_pull_secrets:
-  - dockerconfigjson        
+  - dockerconfigjson

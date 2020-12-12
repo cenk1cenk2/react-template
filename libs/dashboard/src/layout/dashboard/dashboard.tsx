@@ -1,5 +1,3 @@
-import { BaseConfig } from '@cenk1cenk2/react-template-base'
-import { MaxWidths, ScrollUpButton } from '@cenk1cenk2/react-template-components'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Button, Grid, Hidden } from '@material-ui/core'
@@ -15,6 +13,8 @@ import { DashboardLoaded, NavStatesReducer, NavStatesStore, NavTypeStore } from 
 import { DrawerNavigation, DrawerNavigationProps } from './drawer-navigation'
 import { Header, HeaderProps } from './header'
 import { TabsNavigation } from './tabs-navigation'
+import { BaseConfig } from '@cenk1cenk2/react-template-base'
+import { MaxWidths, ScrollUpButton } from '@cenk1cenk2/react-template-components'
 
 export interface DashboardTemplateProps {
   maxWidth?: MaxWidths

@@ -1,8 +1,8 @@
 /* eslint-disable @typescript-eslint/naming-convention */
-import { Theme } from '@cenk1cenk2/react-template-base'
 import { createMuiTheme } from '@material-ui/core'
 
 import { AvailableDesigns, AvailablePalettes, DesignMap, PaletteMap } from './available.theme'
+import { Theme } from '@cenk1cenk2/react-template-base'
 
 export const generateTheme = (options: { palette: AvailablePalettes, design: AvailableDesigns }): Theme => {
   const palette = PaletteMap[options.palette]
