@@ -1,14 +1,4 @@
 {
   "presets": ["@nrwl/react/babel"],
-  "plugins": [
-    ["styled-components", { "pure": true, "ssr": true }],
-    [
-      "module-resolver",
-      {
-        "alias": {
-          "^@cenk1cenk2/react-template-page-loader/?(.*)": "./\\1"
-        }
-      }
-    ]
-  ]
+  "plugins": [["styled-components", { "pure": true, "ssr": true }]]
 }
