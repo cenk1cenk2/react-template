@@ -1,36 +1,31 @@
 # @cenk1cenk2/react-template-base [1.3.0](https://github.com/cenk1cenk2/react-template/compare/@cenk1cenk2/react-template-base@1.2.1...@cenk1cenk2/react-template-base@1.3.0) (2020-11-17)
 
-
 ### Features
 
-* change for qiwi ([6473f19](https://github.com/cenk1cenk2/react-template/commit/6473f19b320d8b0a9317478ff3cb8c224d93cf00))
+- change for qiwi ([6473f19](https://github.com/cenk1cenk2/react-template/commit/6473f19b320d8b0a9317478ff3cb8c224d93cf00))
 
 ## @cenk1cenk2/react-template-base [1.2.1](https://github.com/cenk1cenk2/react-template/compare/@cenk1cenk2/react-template-base@1.2.0...@cenk1cenk2/react-template-base@1.2.1) (2020-11-17)
 
-
 ### Bug Fixes
 
-* fixed the bottom logo component ([078a42d](https://github.com/cenk1cenk2/react-template/commit/078a42de335299b34bd48bde1ae9df0bce300393))
-
+- fixed the bottom logo component ([078a42d](https://github.com/cenk1cenk2/react-template/commit/078a42de335299b34bd48bde1ae9df0bce300393))
 
 ### Performance Improvements
 
-* fix stupid versionign ([5d67e61](https://github.com/cenk1cenk2/react-template/commit/5d67e61ba499fe82ff34944a0a6fd401b5748062))
+- fix stupid versionign ([5d67e61](https://github.com/cenk1cenk2/react-template/commit/5d67e61ba499fe82ff34944a0a6fd401b5748062))
 
 # @cenk1cenk2/react-template-base [1.2.0](https://github.com/cenk1cenk2/react-template/compare/@cenk1cenk2/react-template-base@1.1.1...@cenk1cenk2/react-template-base@1.2.0) (2020-11-17)
 
-
 ### Features
 
-* expanded the theme a bit ([f8430e2](https://github.com/cenk1cenk2/react-template/commit/f8430e25cdd1cc8a29cb72cccc8e984c5d6fb34b))
+- expanded the theme a bit ([f8430e2](https://github.com/cenk1cenk2/react-template/commit/f8430e25cdd1cc8a29cb72cccc8e984c5d6fb34b))
 
 ## @cenk1cenk2/react-template-base [1.1.1](https://github.com/cenk1cenk2/react-template/compare/@cenk1cenk2/react-template-base@1.1.0...@cenk1cenk2/react-template-base@1.1.1) (2020-11-16)
 
-
 ### Bug Fixes
 
-* changed typography a bit ([208e54f](https://github.com/cenk1cenk2/react-template/commit/208e54fb760697fa0cf2a32e68e8cf791485a474))
-* fix rollup config and window properties with forwardref ([3939935](https://github.com/cenk1cenk2/react-template/commit/39399354911d2d72bdaa634e3e6016bdf0c9935e))
+- changed typography a bit ([208e54f](https://github.com/cenk1cenk2/react-template/commit/208e54fb760697fa0cf2a32e68e8cf791485a474))
+- fix rollup config and window properties with forwardref ([3939935](https://github.com/cenk1cenk2/react-template/commit/39399354911d2d72bdaa634e3e6016bdf0c9935e))
 
 # @cenk1cenk2/react-template-base [1.1.0](https://github.com/cenk1cenk2/react-template/compare/@cenk1cenk2/react-template-base@1.0.5...@cenk1cenk2/react-template-base@1.1.0) (2020-11-15)
 

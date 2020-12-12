@@ -1,8 +1,17 @@
 {
   "root": true,
-  "extends": ["@cenk1cenk2/eslint-config/index", "@cenk1cenk2/eslint-config/typescript"],
+  "extends": ["@cenk1cenk2/eslint-config/index", "@cenk1cenk2/eslint-config/typescript", "@cenk1cenk2/eslint-config/react-typescript"],
   "rules": {
-    "no-undef": 0,
-    "no-console": 0
-  }
+    "no-undef": "off",
+    "no-console": "off",
+    "no-unused-vars": "off"
+  },
+  "overrides": [
+    {
+      "files": ["*.ts"],
+      "rules": {
+        "@typescript-eslint/no-unused-vars": "off"
+      }
+    }
+  ]
 }
