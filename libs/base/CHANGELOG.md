@@ -1,3 +1,20 @@
+# @cenk1cenk2/react-template-base [2.0.0](https://github.com/cenk1cenk2/react-template/compare/@cenk1cenk2/react-template-base@1.3.1...@cenk1cenk2/react-template-base@2.0.0) (2020-12-12)
+
+
+### Features
+
+* isolate packages more for less bundle size ([ff9188f](https://github.com/cenk1cenk2/react-template/commit/ff9188fc4e3677fe77a9aa813e8de7e6e0eff648))
+
+
+### Performance Improvements
+
+* force publish ([045cb37](https://github.com/cenk1cenk2/react-template/commit/045cb37cb26f7157ef259c9d7b08a97ce8105b2a))
+
+
+### BREAKING CHANGES
+
+* split up packages for bundle size
+
 ## @cenk1cenk2/react-template-base [1.3.1](https://github.com/cenk1cenk2/react-template/compare/@cenk1cenk2/react-template-base@1.3.0...@cenk1cenk2/react-template-base@1.3.1) (2020-12-12)
 
 ### Bug Fixes
