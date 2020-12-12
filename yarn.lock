@@ -1646,10 +1646,10 @@
     webpack-node-externals "1.7.2"
     yargs-parser "20.0.0"
 
-"@nrwl/eslint-plugin-nx@^11.0.0":
-  version "11.0.0"
-  resolved "https://registry.yarnpkg.com/@nrwl/eslint-plugin-nx/-/eslint-plugin-nx-11.0.0.tgz#05ee0599a6520fb6d106e751c2c991fcefa5b368"
-  integrity sha512-6XWykY46C2fuiNyT2VUXL56HvObij+FGwu5Rtm94ByWfZfXK5akTgURJ0r/p166NjOJxBW5/7/VbSoFlX6cS5A==
+"@nrwl/eslint-plugin-nx@^11.0.1":
+  version "11.0.1"
+  resolved "https://registry.yarnpkg.com/@nrwl/eslint-plugin-nx/-/eslint-plugin-nx-11.0.1.tgz#8908dc1a98205cdbd2c4633a3da0b35f28365cb6"
+  integrity sha512-hYufQCB7BjryeAujocf8Ru8IA9nVHOdizE1x0jlFiodWL5wWcWikR49VH8h/T6818A2Am6WBrS0C6AEFjx8a1Q==
   dependencies:
     "@angular-devkit/core" "~11.0.1"
     "@typescript-eslint/experimental-utils" "^4.3.0"
