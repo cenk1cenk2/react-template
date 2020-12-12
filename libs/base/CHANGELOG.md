@@ -1,3 +1,10 @@
+## @cenk1cenk2/react-template-base [1.3.1](https://github.com/cenk1cenk2/react-template/compare/@cenk1cenk2/react-template-base@1.3.0...@cenk1cenk2/react-template-base@1.3.1) (2020-12-12)
+
+
+### Bug Fixes
+
+* update dependency places for renovate ([a6493d2](https://github.com/cenk1cenk2/react-template/commit/a6493d21e5aa81aa1c9ba5c03f8eb03b417cf759))
+
 # @cenk1cenk2/react-template-base [1.3.0](https://github.com/cenk1cenk2/react-template/compare/@cenk1cenk2/react-template-base@1.2.1...@cenk1cenk2/react-template-base@1.3.0) (2020-11-17)
 
 ### Features
