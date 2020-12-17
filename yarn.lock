@@ -1785,7 +1785,7 @@
     tslib "^2.0.0"
     yargs-parser "20.0.0"
 
-"@nrwl/web@11.0.10", "@nrwl/web@^11.0.9":
+"@nrwl/web@11.0.10", "@nrwl/web@^11.0.10":
   version "11.0.10"
   resolved "https://registry.yarnpkg.com/@nrwl/web/-/web-11.0.10.tgz#8c77ccbce8fbdde4e2440fce8e7f22bf46cd875e"
   integrity sha512-CxhNGTDrwdNpWG6jVTO/1TTUMQsOtsCxrnP1HTBulQQy1XYDb/zvNCAf0gXbLvoQ9HeRT3hBYw/5wC4ghYsRVA==
@@ -1884,7 +1884,7 @@
     webpack-subresource-integrity "^1.5.1"
     worker-plugin "3.2.0"
 
-"@nrwl/workspace@^11.0.9":
+"@nrwl/workspace@^11.0.10":
   version "11.0.10"
   resolved "https://registry.yarnpkg.com/@nrwl/workspace/-/workspace-11.0.10.tgz#2d4219e21782a966368a0f6994d87b5f0afdc733"
   integrity sha512-SxRbo6vp6QEvzuVkZSXyL6g7sFsWpKzCtYYpv4VGk+2v7rQpInuEfm+hqwoGjXjxVBl2waPy3Nrp5cPTNN+STQ==
