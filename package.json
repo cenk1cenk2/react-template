@@ -87,7 +87,7 @@
     "@nrwl/node": "^11.0.18",
     "@nrwl/react": "^11.0.18",
     "@nrwl/web": "^11.0.18",
-    "@nrwl/workspace": "^11.0.17",
+    "@nrwl/workspace": "^11.0.18",
     "@testing-library/react": "11.2.2",
     "@types/config": "^0.0.37",
     "@types/jest": "26.0.19",
