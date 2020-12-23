@@ -6048,10 +6048,10 @@ follow-redirects@^1.0.0:
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.13.1.tgz#5f69b813376cee4fd0474a3aba835df04ab763b7"
   integrity sha512-SSG5xmZh1mkPGyKzjZP8zLjltIfpW32Y5QpdNJyjcfGxK3qo3NDDkZOZSFiGn1A6SclQxY9GzEwAHQ3dmYRWpg==
 
-fontsource-frank-ruhl-libre@^3.1.5:
-  version "3.1.5"
-  resolved "https://registry.yarnpkg.com/fontsource-frank-ruhl-libre/-/fontsource-frank-ruhl-libre-3.1.5.tgz#1774fc74f3eca6a152173ae71f68ab711f02ce4d"
-  integrity sha512-y+DU2eI7O9NPC/UfZgJsJhjyqnTs6iovdlF4KkqUlABBrYRo+cKuMrHY0KAyobvH8JLP3DKH3ksP9DlfBUu+Yw==
+fontsource-frank-ruhl-libre@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/fontsource-frank-ruhl-libre/-/fontsource-frank-ruhl-libre-4.0.0.tgz#0a3381a62d099e8278f292134ae6c5ae10059a71"
+  integrity sha512-s4XRYcbRhHLUdwJfshF0Cu/KC0QfDU4Q3L6HT6lrp96jWXiYX6fHfstQMQRNm2s6yyYPonfo2kC1qVkqd8WN8Q==
 
 for-in@^1.0.2:
   version "1.0.2"
