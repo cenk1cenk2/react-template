@@ -1,3 +1,15 @@
+# @cenk1cenk2/react-template-page-loader [2.0.0](https://github.com/cenk1cenk2/react-template/compare/@cenk1cenk2/react-template-page-loader@1.0.1...@cenk1cenk2/react-template-page-loader@2.0.0) (2021-01-02)
+
+
+### Features
+
+* update progress bar to have binds on the class ([0cae74c](https://github.com/cenk1cenk2/react-template/commit/0cae74c3802a8104ce14abd11e812c36726dc6e4))
+
+
+### BREAKING CHANGES
+
+* updated progress bar manual update to have manual instead of mountOnly
+
 ## @cenk1cenk2/react-template-page-loader [1.0.1](https://github.com/cenk1cenk2/react-template/compare/@cenk1cenk2/react-template-page-loader@1.0.0...@cenk1cenk2/react-template-page-loader@1.0.1) (2020-12-12)
 
 
