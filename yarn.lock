@@ -1617,18 +1617,6 @@
     webpack-node-externals "1.7.2"
     yargs-parser "20.0.0"
 
-"@nrwl/devkit@11.2.0":
-  version "11.2.0"
-  resolved "https://registry.yarnpkg.com/@nrwl/devkit/-/devkit-11.2.0.tgz#517f0c4fffd2198f7bc02128946e5c12f473dcec"
-  integrity sha512-VKt/zA0jiyVM+yD8Bz1ls+GiItflSL7RvgethJHESxSUDtQfEI3eWlWcZ9SFGe+Wzk4DcmI8OVllkAdViYxOtg==
-  dependencies:
-    "@nrwl/tao" "11.2.0"
-    ejs "^3.1.5"
-    ignore "^5.0.4"
-    semver "6.3.0"
-    strip-json-comments "2.0.1"
-    tslib "^2.0.0"
-
 "@nrwl/devkit@11.2.6":
   version "11.2.6"
   resolved "https://registry.yarnpkg.com/@nrwl/devkit/-/devkit-11.2.6.tgz#cac1ccf8351898cd96b48eb11a834cf7846d5fb6"
@@ -1650,23 +1638,12 @@
     "@typescript-eslint/experimental-utils" "^4.3.0"
     confusing-browser-globals "^1.0.9"
 
-"@nrwl/jest@11.2.6":
+"@nrwl/jest@11.2.6", "@nrwl/jest@^11.1.5":
   version "11.2.6"
   resolved "https://registry.yarnpkg.com/@nrwl/jest/-/jest-11.2.6.tgz#756dba8dd992d8ea83c743e292f3202258419502"
   integrity sha512-0bjqrNw1PFotpF5UTKswjQ8FvEKy3jVCoV0qiv0+oOl9FgRwLcqrE9PEf41W5nU3WpJDxfcuedO2hzj/slGXHg==
   dependencies:
     "@nrwl/devkit" "11.2.6"
-    jest-resolve "^26.6.2"
-    rxjs "^6.5.4"
-    strip-json-comments "2.0.1"
-    tslib "^2.0.0"
-
-"@nrwl/jest@^11.1.5":
-  version "11.2.0"
-  resolved "https://registry.yarnpkg.com/@nrwl/jest/-/jest-11.2.0.tgz#d0eecd1293daf2a034830c7ce926580d31c1a17a"
-  integrity sha512-VoLWTd/8CB2QSPZjHJMsuhW2YOWsxfGmpbw8ttWmgei5EKuj3iHhn1dVumqZWyaYRzsmwwj00wdxfPJfB8qJog==
-  dependencies:
-    "@nrwl/devkit" "11.2.0"
     jest-resolve "^26.6.2"
     rxjs "^6.5.4"
     strip-json-comments "2.0.1"
@@ -1730,23 +1707,6 @@
     eslint-plugin-react "^7.18.3"
     eslint-plugin-react-hooks "^2.4.0"
     url-loader "^3.0.0"
-
-"@nrwl/tao@11.2.0":
-  version "11.2.0"
-  resolved "https://registry.yarnpkg.com/@nrwl/tao/-/tao-11.2.0.tgz#15ebace96fb37f33183a5897c6d4e0dfb684e66b"
-  integrity sha512-hv1NvICNWJ9P5QBqNhMev9eoSXZDvUj5Cfqf/BaN2q4pWtKvmP2fM/WMoXPJm5PVz/yCcVdgOYnPn73UlsLyXQ==
-  dependencies:
-    chalk "4.1.0"
-    fs-extra "7.0.1"
-    inquirer "^6.3.1"
-    minimist "^1.2.5"
-    rxjs "^6.5.4"
-    rxjs-for-await "0.0.2"
-    semver "6.3.0"
-    strip-json-comments "2.0.1"
-    tmp "0.0.33"
-    tslib "^2.0.0"
-    yargs-parser "20.0.0"
 
 "@nrwl/tao@11.2.6":
   version "11.2.6"
@@ -2347,9 +2307,9 @@
   integrity sha512-37RSHht+gzzgYeobbG+KWryeAW8J33Nhr69cjTqSYymXVZEN9NbRYWoYlRtDhHKPVT1FyNKwaTPC1NynKZpzRA==
 
 "@types/yargs@^15.0.0":
-  version "15.0.12"
-  resolved "https://registry.yarnpkg.com/@types/yargs/-/yargs-15.0.12.tgz#6234ce3e3e3fa32c5db301a170f96a599c960d74"
-  integrity sha512-f+fD/fQAo3BCbCDlrUpznF1A5Zp9rB0noS5vnoormHSIPFKL0Z2DcUJ3Gxp5ytH4uLRNxy7AwYUC9exZzqGMAw==
+  version "15.0.13"
+  resolved "https://registry.yarnpkg.com/@types/yargs/-/yargs-15.0.13.tgz#34f7fec8b389d7f3c1fd08026a5763e072d3c6dc"
+  integrity sha512-kQ5JNTrbDv3Rp5X2n/iUu37IJBDU2gsZ5R/g1/KHOOEc5IKfUFjXT6DENPGduh08I/pamwtEq4oul7gUqKTQDQ==
   dependencies:
     "@types/yargs-parser" "*"
 
@@ -3935,9 +3895,9 @@ caniuse-api@^3.0.0:
     lodash.uniq "^4.5.0"
 
 caniuse-lite@^1.0.0, caniuse-lite@^1.0.30000989, caniuse-lite@^1.0.30001020, caniuse-lite@^1.0.30001030, caniuse-lite@^1.0.30001173:
-  version "1.0.30001180"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001180.tgz#67abcd6d1edf48fa5e7d1e84091d1d65ab76e33b"
-  integrity sha512-n8JVqXuZMVSPKiPiypjFtDTXc4jWIdjxull0f92WLo7e1MSi3uJ3NvveakSh/aCl1QKFAvIz3vIj0v+0K+FrXw==
+  version "1.0.30001181"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001181.tgz#4f0e5184e1ea7c3bf2727e735cbe7ca9a451d673"
+  integrity sha512-m5ul/ARCX50JB8BSNM+oiPmQrR5UmngaQ3QThTTp5HcIIQGP/nPBs82BYLE+tigzm3VW+F4BJIhUyaVtEweelQ==
 
 capture-exit@^2.0.0:
   version "2.0.0"
@@ -5204,9 +5164,9 @@ ejs@^3.1.5:
     jake "^10.6.1"
 
 electron-to-chromium@^1.3.247, electron-to-chromium@^1.3.634:
-  version "1.3.648"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.648.tgz#b05926eca1843c04b283e682a1fc6c10af7e9dda"
-  integrity sha512-4POzwyQ80tkDiBwkxn7IpfzioimrjRSFX1sCQ3pLZsYJ5ERYmwzdq0hZZ3nFP7Z6GtmnSn3xwWDm8FPlMeOoEQ==
+  version "1.3.649"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.649.tgz#3aa8be052d4d268ede45d8e98d0cd60ffefad607"
+  integrity sha512-ojGDupQ3UMkvPWcTICe4JYe17+o9OLiFMPoduoR72Zp2ILt1mRVeqnxBEd6s/ptekrnsFU+0A4lStfBe/wyG/A==
 
 elliptic@^6.5.3:
   version "6.5.3"
@@ -5237,9 +5197,9 @@ emoji-regex@^8.0.0:
   integrity sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==
 
 emoji-regex@^9.0.0:
-  version "9.2.0"
-  resolved "https://registry.yarnpkg.com/emoji-regex/-/emoji-regex-9.2.0.tgz#a26da8e832b16a9753309f25e35e3c0efb9a066a"
-  integrity sha512-DNc3KFPK18bPdElMJnf/Pkv5TXhxFU3YFDEuGLDRtPmV4rkmCjBkCSEp22u6rBHdSN9Vlp/GK7k98prmE1Jgug==
+  version "9.2.1"
+  resolved "https://registry.yarnpkg.com/emoji-regex/-/emoji-regex-9.2.1.tgz#c9b25604256bb3428964bead3ab63069d736f7ee"
+  integrity sha512-117l1H6U4X3Krn+MrzYrL57d5H7siRHWraBs7s+LjRuFK7Fe7hJqnJ0skWlinqsycVLU5YAo6L8CsEYQ0V5prg==
 
 emojis-list@^2.0.0:
   version "2.1.0"
