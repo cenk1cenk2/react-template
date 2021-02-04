@@ -113,9 +113,9 @@
     source-map "^0.5.0"
 
 "@babel/generator@^7.12.13", "@babel/generator@^7.9.6":
-  version "7.12.13"
-  resolved "https://registry.yarnpkg.com/@babel/generator/-/generator-7.12.13.tgz#5f6ebe6c85db99886db2d7b044409196f872a503"
-  integrity sha512-9qQ8Fgo8HaSvHEt6A5+BATP7XktD/AdAnObUeTRz5/e2y3kbrxZgz32qUJJsdmwUvBJzF4AeV21nGTNwv05Mpw==
+  version "7.12.15"
+  resolved "https://registry.yarnpkg.com/@babel/generator/-/generator-7.12.15.tgz#4617b5d0b25cc572474cc1aafee1edeaf9b5368f"
+  integrity sha512-6F2xHxBiFXWNSGb7vyCUTBF8RCLY66rS0zEPcP8t/nQyXjha5EuK4z7H5o7fWG8B4M7y6mqVWq1J+1PuwRhecQ==
   dependencies:
     "@babel/types" "^7.12.13"
     jsesc "^2.5.1"
@@ -315,9 +315,9 @@
     js-tokens "^4.0.0"
 
 "@babel/parser@^7.1.0", "@babel/parser@^7.12.13", "@babel/parser@^7.9.6":
-  version "7.12.14"
-  resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.12.14.tgz#4adb7c5eef1d437ef965ad1569cd826db8c11dc9"
-  integrity sha512-xcfxDq3OrBnDsA/Z8eK5/2iPcLD8qbOaSSfOw4RA6jp4i7e6dEQ7+wTwxItEwzcXPQcsry5nZk96gmVPKletjQ==
+  version "7.12.15"
+  resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.12.15.tgz#2b20de7f0b4b332d9b119dd9c33409c538b8aacf"
+  integrity sha512-AQBOU2Z9kWwSZMd6lNjCX0GUgFonL1wAM1db8L8PMk9UDaGsRCArBkU4Sc+UCM3AE4hjbXx+h58Lb3QT4oRmrA==
 
 "@babel/plugin-proposal-async-generator-functions@^7.12.13", "@babel/plugin-proposal-async-generator-functions@^7.8.3":
   version "7.12.13"
@@ -1606,18 +1606,6 @@
     strip-json-comments "2.0.1"
     tslib "^2.0.0"
 
-"@nrwl/devkit@11.2.9":
-  version "11.2.9"
-  resolved "https://registry.yarnpkg.com/@nrwl/devkit/-/devkit-11.2.9.tgz#5266dc0cf319e868859316baf35c7dcb7e9bca99"
-  integrity sha512-lF9IvjT2WInwKo5HxovZyefgsc839xItOEz/8J0bR+QI5fp9nxY3aer413BDhnfgUbkKp/KjKGcPSWdKVHSR2A==
-  dependencies:
-    "@nrwl/tao" "11.2.9"
-    ejs "^3.1.5"
-    ignore "^5.0.4"
-    semver "6.3.0"
-    strip-json-comments "2.0.1"
-    tslib "^2.0.0"
-
 "@nrwl/eslint-plugin-nx@^11.2.10":
   version "11.2.10"
   resolved "https://registry.yarnpkg.com/@nrwl/eslint-plugin-nx/-/eslint-plugin-nx-11.2.10.tgz#16f57edcb3a3a88bc0b7afc3a57a594ec2bee487"
@@ -1627,23 +1615,12 @@
     "@typescript-eslint/experimental-utils" "^4.3.0"
     confusing-browser-globals "^1.0.9"
 
-"@nrwl/jest@11.2.10":
+"@nrwl/jest@11.2.10", "@nrwl/jest@^11.2.6":
   version "11.2.10"
   resolved "https://registry.yarnpkg.com/@nrwl/jest/-/jest-11.2.10.tgz#26c7eb73a39e280dd2a1b78d176d08e87a52058a"
   integrity sha512-A7/RbgsG8Sx6Ul7WULpIfLMMoJ4TzdipOrv2MgCc1Mj5PpwqO8jVRWzhtv1bwwM058RmAJXXol2Ni8qoCA5oXQ==
   dependencies:
     "@nrwl/devkit" "11.2.10"
-    jest-resolve "^26.6.2"
-    rxjs "^6.5.4"
-    strip-json-comments "2.0.1"
-    tslib "^2.0.0"
-
-"@nrwl/jest@^11.2.6":
-  version "11.2.9"
-  resolved "https://registry.yarnpkg.com/@nrwl/jest/-/jest-11.2.9.tgz#af3207798668dabd3b3fc6b224ef639dc326ebc5"
-  integrity sha512-MdZRiYc/0iTXsrqeFQDcSuuFOc5nfgriG9/PT166O0gpj94TfQmut4pRjgEzGYU9EA2waZt8LqIx5JnVmyxo8w==
-  dependencies:
-    "@nrwl/devkit" "11.2.9"
     jest-resolve "^26.6.2"
     rxjs "^6.5.4"
     strip-json-comments "2.0.1"
@@ -1712,26 +1689,6 @@
   version "11.2.10"
   resolved "https://registry.yarnpkg.com/@nrwl/tao/-/tao-11.2.10.tgz#f55b3b39a620615f5d4fd84cbe08af8e9ae871a8"
   integrity sha512-nOOuMDrdEd678HMlK9w7KhSGQJudN9Jr11k3MeTnroQrtGSzvN4FMW0tVynQWNJKbzLQeV3gQHNh8FsP9Pvo6Q==
-  dependencies:
-    "@angular-devkit/architect" "~0.1100.1"
-    "@angular-devkit/core" "~11.0.1"
-    "@angular-devkit/schematics" "~11.0.1"
-    chalk "4.1.0"
-    fs-extra "7.0.1"
-    inquirer "^6.3.1"
-    minimist "^1.2.5"
-    rxjs "^6.5.4"
-    rxjs-for-await "0.0.2"
-    semver "6.3.0"
-    strip-json-comments "2.0.1"
-    tmp "0.0.33"
-    tslib "^2.0.0"
-    yargs-parser "20.0.0"
-
-"@nrwl/tao@11.2.9":
-  version "11.2.9"
-  resolved "https://registry.yarnpkg.com/@nrwl/tao/-/tao-11.2.9.tgz#a534f1fe91500f791895431a219a74bea26adee7"
-  integrity sha512-XV2iBEVNI4KW6T/S5gZ9sqNTzs7ziNDDrDoFlDdaWs0wmvHxGp8KzWS4/4WlHZkNhjTYUWCWdrMEvy427YyxNQ==
   dependencies:
     "@angular-devkit/architect" "~0.1100.1"
     "@angular-devkit/core" "~11.0.1"
@@ -2206,9 +2163,9 @@
   integrity sha512-tHq6qdbT9U1IRSGf14CL0pUlULksvY9OZ+5eEgl1N7t+OA3tGvNpxJCzuKQlsNgCVwbAs670L1vcVQi8j9HjnA==
 
 "@types/node@*", "@types/node@^14.14.22":
-  version "14.14.23"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.23.tgz#2dfa2c74cfddbaf9649b407190a2ed1a1433c60d"
-  integrity sha512-pkKXgf96TELUhrc8C01J0e+If5qb0WqF+WF09FbCINywIk+iUEQgMlA8IxgdZ79qQ88Bljw+9NcqwvWGXknWDw==
+  version "14.14.25"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.25.tgz#15967a7b577ff81383f9b888aa6705d43fbbae93"
+  integrity sha512-EPpXLOVqDvisVxtlbvzfyqSsFeQxltFbluZNRndIb8tr9KiBnYNLzrc1N3pyKUCww2RNrfHDViqDWWE1LCJQtQ==
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.0"
@@ -5167,9 +5124,9 @@ ejs@^3.1.5:
     jake "^10.6.1"
 
 electron-to-chromium@^1.3.564, electron-to-chromium@^1.3.649:
-  version "1.3.653"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.653.tgz#1d98400eba330538a7fe169808c6bf9d83c44450"
-  integrity sha512-LehOhcl74u9fkV9Un6WahJ+Xh+0FZLCCDnKYis1Olx1DX2ugRww5PJicE65OG8yznMj8EOQZRcz6FSV1xKxqsA==
+  version "1.3.654"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.654.tgz#f1b82d59bdeafa65af75794356df54f92b41c4de"
+  integrity sha512-Zy2gc/c8KYFg2GkNr7Ruzh5tPEZpFm7EyXqZTFasm1YRDJtpyBRGaOuM0H3t6SuIP53qX4kNmtO9t0WjhBjE9A==
 
 elliptic@^6.5.3:
   version "6.5.4"
@@ -9393,9 +9350,9 @@ p-try@^2.0.0:
   integrity sha512-R4nPAVTAU0B9D35/Gk3uJf/7XYbQcyohSKdvAxIRSNghFl4e71hVoGnBNQz9cWaXxO2I10KTC+3jMdvvoKw6dQ==
 
 pacote@^11.1.10:
-  version "11.2.4"
-  resolved "https://registry.yarnpkg.com/pacote/-/pacote-11.2.4.tgz#dc7ca740a573ed86a3bf863511d22c1d413ec82f"
-  integrity sha512-GfTeVQGJ6WyBQbQD4t3ocHbyOmTQLmWjkCKSZPmKiGFKYKNUaM5U2gbLzUW8WG1XmS9yQFnsTFA0k3o1+q4klQ==
+  version "11.2.5"
+  resolved "https://registry.yarnpkg.com/pacote/-/pacote-11.2.5.tgz#7a1ecc7ac78237b54dcbc99f42ae6cc215d6e64e"
+  integrity sha512-KgVY3Rh3xJnhnRCirmsXW8kIdbslrFTnYeTtdzyvObPgj/Tc5VqdmazxsvdXGdIgRB/Km92mBKfuWcGGqgu7UQ==
   dependencies:
     "@npmcli/git" "^2.0.1"
     "@npmcli/installed-package-contents" "^1.0.5"
