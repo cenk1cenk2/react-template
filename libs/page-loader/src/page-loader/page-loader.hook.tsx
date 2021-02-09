@@ -20,7 +20,7 @@ export function useProgress (
   // eslint-disable-next-line no-unused-vars
 ): { done: (force?: boolean) => NProgress, set: (percent: number) => NProgress, increment: (percent: number) => NProgress, isLoading: boolean, status: number } {
   props = {
-    manual: true,
+    manual: false,
     useBackdrop: true,
     ...props
   }
