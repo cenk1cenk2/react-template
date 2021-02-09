@@ -1,3 +1,10 @@
+# @cenk1cenk2/react-template-base [2.1.0](https://github.com/cenk1cenk2/react-template/compare/@cenk1cenk2/react-template-base@2.0.1...@cenk1cenk2/react-template-base@2.1.0) (2021-02-09)
+
+
+### Features
+
+* add font injection property ([1ac98cd](https://github.com/cenk1cenk2/react-template/commit/1ac98cd35aeac50d60dfc719aaf996d38f90bab1))
+
 ## @cenk1cenk2/react-template-base [2.0.1](https://github.com/cenk1cenk2/react-template/compare/@cenk1cenk2/react-template-base@2.0.0...@cenk1cenk2/react-template-base@2.0.1) (2020-12-12)
 
 
