@@ -1,3 +1,10 @@
+## @cenk1cenk2/react-template-page-loader [2.0.1](https://github.com/cenk1cenk2/react-template/compare/@cenk1cenk2/react-template-page-loader@2.0.0...@cenk1cenk2/react-template-page-loader@2.0.1) (2021-02-09)
+
+
+### Bug Fixes
+
+* page-loader manual load ([76581a8](https://github.com/cenk1cenk2/react-template/commit/76581a8a1fc57071f132f1e446e29ae2fde1214a))
+
 # @cenk1cenk2/react-template-page-loader [2.0.0](https://github.com/cenk1cenk2/react-template/compare/@cenk1cenk2/react-template-page-loader@1.0.1...@cenk1cenk2/react-template-page-loader@2.0.0) (2021-01-02)
 
 
