@@ -56,9 +56,9 @@
     "styled-components": "^5.2.1"
   },
   "dependencies": {
-    "@fortawesome/free-solid-svg-icons": "^5.15.2",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "@fortawesome/react-fontawesome": "^0.1.14",
-    "@fortawesome/fontawesome-svg-core": "^1.2.34",
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "clsx": "^1.1.1",
     "config": "^3.3.6",
     "document-register-element": "^1.14.10",
