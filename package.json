@@ -80,7 +80,7 @@
     "@babel/preset-env": "7.13.12",
     "@babel/preset-react": "7.13.13",
     "@babel/preset-typescript": "7.13.0",
-    "@cenk1cenk2/eslint-config": "^0.4.34",
+    "@cenk1cenk2/eslint-config": "^0.4.35",
     "@nrwl/cli": "^11.6.1",
     "@nrwl/eslint-plugin-nx": "^11.6.1",
     "@nrwl/jest": "^11.6.1",
