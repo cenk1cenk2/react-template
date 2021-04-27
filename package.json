@@ -70,7 +70,7 @@
     "recoil": "^0.2.0",
     "styled-components": "^5.2.3",
     "use-debounce": "^5.2.1",
-    "@material-ui/core": "^4.11.3"
+    "@material-ui/core": "^4.11.4"
   },
   "devDependencies": {
     "roboto-fontface": "^0.10.0",
