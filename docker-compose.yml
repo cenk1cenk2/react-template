@@ -1,7 +1,7 @@
 version: '3.7'
 services:
   monorepo:
-    image: cenk1cenk2/lerna-dev:14
+    image: cenk1cenk2/lerna-dev:16
     environment:
       PACKAGE_START_COMMAND: start
       SERVICES: .
