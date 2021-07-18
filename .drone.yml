@@ -26,7 +26,7 @@ steps:
     settings:
       git_method: gh
       add_modules:
-        - multi-semantic-release
+        - "@qiwi/multi-semantic-release"
       override: multi-semantic-release
       git_user_email:
         from_secret: github_username
@@ -42,3 +42,6 @@ steps:
         - rc
       event:
         - push
+
+image_pull_secrets:
+  - dockerconfigjson

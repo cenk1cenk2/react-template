@@ -1,8 +1,38 @@
 {
   "root": true,
-  "extends": ["@cenk1cenk2/eslint-config/index", "@cenk1cenk2/eslint-config/typescript"],
+  "extends": ["@cenk1cenk2/eslint-config/index", "@cenk1cenk2/eslint-config/typescript", "@cenk1cenk2/eslint-config/react-typescript"],
   "rules": {
-    "no-undef": 0,
-    "no-console": 0
-  }
+    "no-undef": "off",
+    "no-console": "off",
+    "no-unused-vars": "off",
+    "import/order": [
+      "error",
+      {
+        "pathGroups": [
+          {
+            "pattern": "@cenk1cenk2/**",
+            "group": "parent"
+          }
+        ],
+        "pathGroupsExcludedImportTypes": ["builtin"],
+        "groups": [
+          ["builtin", "external"],
+          ["index", "parent", "sibling"]
+        ],
+        "newlines-between": "always",
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        }
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": ["*.ts"],
+      "rules": {
+        "@typescript-eslint/no-unused-vars": "off"
+      }
+    }
+  ]
 }

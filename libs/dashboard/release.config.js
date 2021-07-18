@@ -12,13 +12,13 @@ module.exports = {
     [
       '@semantic-release/exec',
       {
-        prepareCmd: 'cd ../../ && yarn build:one components --with-deps'
+        prepareCmd: 'cd ../../ && yarn build:one dashboard --with-deps'
       }
     ],
     [
       '@semantic-release/npm',
       {
-        pkgRoot: '../../dist/react-template-components'
+        pkgRoot: '../../dist/react-template-dashboard'
       }
     ]
   ]

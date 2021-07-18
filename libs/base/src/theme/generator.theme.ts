@@ -1,12 +1,19 @@
 /* eslint-disable @typescript-eslint/naming-convention */
-import { Theme } from '@cenk1cenk2/react-template-base'
 import { createMuiTheme } from '@material-ui/core'
 
 import { AvailableDesigns, AvailablePalettes, DesignMap, PaletteMap } from './available.theme'
+import { Theme } from '@cenk1cenk2/react-template-base'
 
-export const generateTheme = (options: { palette: AvailablePalettes, design: AvailableDesigns }): Theme => {
+export const generateTheme = (options: { palette: AvailablePalettes, design: AvailableDesigns, fonts?: { header?: string, normal?: string } }): Theme => {
   const palette = PaletteMap[options.palette]
   const design = DesignMap[options.design]
+
+  // inject default fonts
+  options.fonts = {
+    header: options.fonts?.normal ?? 'Roboto',
+    normal: 'Frank Ruhl Libre',
+    ...options.fonts
+  }
 
   return {
     ...createMuiTheme({
@@ -23,24 +30,24 @@ export const generateTheme = (options: { palette: AvailablePalettes, design: Ava
       typography: {
         fontSize: 16,
         // htmlFontSize: 16,
-        fontFamily: [ 'Varela', 'Roboto' ].join(','),
+        fontFamily: [ options.fonts.normal ].join(','),
         h1: {
-          fontFamily: 'Roboto',
+          fontFamily: options.fonts.header,
           fontWeight: 700,
           fontSize: '3.5rem'
         },
         h2: {
-          fontFamily: 'Roboto',
+          fontFamily: options.fonts.header,
           fontWeight: 700,
           fontSize: '2.75rem'
         },
         h3: {
-          fontFamily: 'Roboto',
+          fontFamily: options.fonts.header,
           fontWeight: 700,
           fontSize: '2.225rem'
         },
         h4: {
-          fontFamily: 'Roboto',
+          fontFamily: options.fonts.header,
           fontWeight: 500,
           fontSize: '2rem'
         },

@@ -1,4 +1,5 @@
-import { Pulldown, Header, DrawerNavigation } from '@cenk1cenk2/react-template-components'
+import { Pulldown } from '@cenk1cenk2/react-template-components'
+import { Header, DrawerNavigation } from '@cenk1cenk2/react-template-dashboard'
 import { ReactComponent as LogoImage } from '@test-app/assets/img/logo/logo.svg'
 import React, { Fragment } from 'react'
 import { RecoilRoot } from 'recoil'

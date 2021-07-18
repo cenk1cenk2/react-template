@@ -1,22 +1,26 @@
-import { Theme } from '@cenk1cenk2/react-template-base'
 import nprogress, { NProgress, NProgressOptions } from 'nprogress'
 import React, { Fragment, useEffect, useState } from 'react'
 import ReactDOM from 'react-dom/server'
 import { ThemeProvider as StyledThemeProvider } from 'styled-components'
 
 import { NProgressBar, PageLoader, PageLoaderProps } from './page-loader'
+import { Theme } from '@cenk1cenk2/react-template-base'
 
 export function useProgress (
   props?: {
+    /** Pass in theme variable to theme the render. */
     theme: Theme
+    /** Use backdrop or just the loading bar. */
     useBackdrop?: boolean
-    mountOnly?: boolean
+    /** Control the done process manually. */
+    manual?: boolean
+    /** Pass in nprogress options to nprogress. */
     config?: Partial<NProgressOptions>
   } & PageLoaderProps
   // eslint-disable-next-line no-unused-vars
-): { done: (force?: boolean) => NProgress, set: (percent: number) => NProgress, isLoading: boolean, status: number } {
+): { done: (force?: boolean) => NProgress, set: (percent: number) => NProgress, increment: (percent: number) => NProgress, isLoading: boolean, status: number } {
   props = {
-    mountOnly: true,
+    manual: false,
     useBackdrop: true,
     ...props
   }
@@ -39,14 +43,16 @@ export function useProgress (
 
   useEffect(() => {
     setIsLoading(false)
-    if (!isLoading && props.mountOnly) {
+
+    if (!props.manual) {
       nprogress.done()
     }
   })
 
   return {
-    done: nprogress.done,
-    set: nprogress.set,
+    done: nprogress.done.bind(nprogress),
+    set: nprogress.set.bind(nprogress),
+    increment: nprogress.inc.bind(nprogress),
     isLoading,
     status: nprogress.status ?? 1
   }

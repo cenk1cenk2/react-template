@@ -1,7 +1,7 @@
 {
-  "name": "@cenk1cenk2/react-template-base",
+  "name": "@cenk1cenk2/react-template-page-loader",
   "version": "1.0.0",
-  "description": "Some react/next.js template scaffolding for sharing components.",
+  "description": "Some react/next.js components.",
   "repository": "https://github.com/cenk1cenk2/react-template",
   "author": {
     "name": "Cenk Kilic",
@@ -18,7 +18,7 @@
     "react-dom": "^>= 17.0.1",
     "react-is": "^>= 17.0.1",
     "react-router-dom": ">= 5.2.0",
-    "@material-ui/core": ">= 4.11.2",
-    "styled-components": ">= 5.2.1"
+    "nprogress": "^0.2.0",
+    "use-debounce": "^5.2.0 || ^6.0.0 || ^7.0.0"
   }
 }

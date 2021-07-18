@@ -18,17 +18,17 @@ export const BottomLogo: React.FC<BottomLogoProps> = (props) => {
         <Grid container direction="row" justify="center" alignItems="center">
           <Grid item>
             <Logo>
-              <props.logo height={theme.typography.h5.fontSize} width={theme.typography.h5.fontSize} />
+              <props.logo height={theme.typography.body1.fontSize} width={theme.typography.body1.fontSize} />
             </Logo>
           </Grid>
           <Grid item>
-            <Typography variant="h5" color="textPrimary">
+            <Typography variant="body1" color="textPrimary">
               {props.package.name}
             </Typography>
           </Grid>
         </Grid>
         <Grid item>
-          <Typography variant="h6">
+          <Typography variant="body1" style={{ color: theme.palette.grey[600] }}>
             <small>v{props.package.version}</small>
           </Typography>
         </Grid>
@@ -39,9 +39,9 @@ export const BottomLogo: React.FC<BottomLogoProps> = (props) => {
 
 const Logo = styled.div(
   ({ theme }) => css`
-    width: ${theme.typography.fontSize}px;
-    height: ${theme.typography.fontSize}px;
-    margin-right: ${theme.typography.fontSize / 2}px;
-    margin-top: ${theme.typography.fontSize / 8}px;
+    width: ${theme.typography.body1.fontSize};
+    height: ${theme.typography.body1.fontSize};
+    margin-right: ${theme.spacing(1) / 2}px;
+    margin-top: ${theme.spacing(1) / 4}px;
   `
 )

@@ -1,4 +1,4 @@
-import { DashboardTemplate, DashboardTemplateNavTypes } from '@cenk1cenk2/react-template-components'
+import { DashboardTemplate, DashboardTemplateNavTypes } from '@cenk1cenk2/react-template-dashboard'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Typography } from '@material-ui/core'
